@@ -1,0 +1,188 @@
+{
+    "waves": [
+        {
+            "name": "W1", 
+            "id": 1, 
+            "duration": 8.0, 
+            "release_time": 0.5, 
+            "mob_types": "1", 
+            "mob_amounts": "3"
+        }, 
+        {
+            "name": "W2", 
+            "id": 2, 
+            "duration": 9.0, 
+            "release_time": 0.475, 
+            "mob_types": "1", 
+            "mob_amounts": "5"
+        }, 
+        {
+            "name": "W3", 
+            "id": 3, 
+            "duration": 10.0, 
+            "release_time": 0.45125, 
+            "mob_types": "1,2", 
+            "mob_amounts": "5,1"
+        }, 
+        {
+            "name": "W4", 
+            "id": 4, 
+            "duration": 12.0, 
+            "release_time": 0.4286875, 
+            "mob_types": "1,2", 
+            "mob_amounts": "6,2"
+        }, 
+        {
+            "name": "W5", 
+            "id": 5, 
+            "duration": 12.0, 
+            "release_time": 0.407253125, 
+            "mob_types": "1,2", 
+            "mob_amounts": "3,3"
+        }, 
+        {
+            "name": "W6", 
+            "id": 6, 
+            "duration": 12.0, 
+            "release_time": 0.386890469, 
+            "mob_types": "2,3", 
+            "mob_amounts": "4,2"
+        }, 
+        {
+            "name": "W7", 
+            "id": 7, 
+            "duration": 12.0, 
+            "release_time": 0.367545945, 
+            "mob_types": "2", 
+            "mob_amounts": "8"
+        }, 
+        {
+            "name": "W8", 
+            "id": 8, 
+            "duration": 12.0, 
+            "release_time": 0.349168648, 
+            "mob_types": "1,2", 
+            "mob_amounts": "12,1"
+        }, 
+        {
+            "name": "W11", 
+            "id": 9, 
+            "duration": 12.0, 
+            "release_time": 0.331710216, 
+            "mob_types": "1", 
+            "mob_amounts": "15"
+        }, 
+        {
+            "name": "W12", 
+            "id": 10, 
+            "duration": 12.0, 
+            "release_time": 0.315124705, 
+            "mob_types": "2,3", 
+            "mob_amounts": "8,2"
+        }, 
+        {
+            "name": "W13", 
+            "id": 11, 
+            "duration": 12.0, 
+            "release_time": 0.29936847, 
+            "mob_types": "1,2,3", 
+            "mob_amounts": "10,4,3"
+        }, 
+        {
+            "name": "W14", 
+            "id": 12, 
+            "duration": 12.0, 
+            "release_time": 0.284400046, 
+            "mob_types": "2,3", 
+            "mob_amounts": "10,2"
+        }, 
+        {
+            "name": "W15", 
+            "id": 13, 
+            "duration": 12.0, 
+            "release_time": 0.270180044, 
+            "mob_types": "2", 
+            "mob_amounts": "15"
+        }, 
+        {
+            "name": "W16", 
+            "id": 14, 
+            "duration": 12.0, 
+            "release_time": 0.256671042, 
+            "mob_types": "1,2,3", 
+            "mob_amounts": "5,10,5"
+        }, 
+        {
+            "name": "W17", 
+            "id": 15, 
+            "duration": 12.0, 
+            "release_time": 0.24383749, 
+            "mob_types": "1,2,3,4", 
+            "mob_amounts": "3,4,6,2"
+        }, 
+        {
+            "name": "W18", 
+            "id": 16, 
+            "duration": 12.0, 
+            "release_time": 0.231645615, 
+            "mob_types": "3", 
+            "mob_amounts": "8"
+        }, 
+        {
+            "name": "W19", 
+            "id": 17, 
+            "duration": 12.0, 
+            "release_time": 0.220063334, 
+            "mob_types": "3", 
+            "mob_amounts": "10"
+        }, 
+        {
+            "name": "W20", 
+            "id": 18, 
+            "duration": 12.0, 
+            "release_time": 0.209060168, 
+            "mob_types": "3,4", 
+            "mob_amounts": "5,3"
+        }, 
+        {
+            "name": "W21", 
+            "id": 19, 
+            "duration": 12.0, 
+            "release_time": 0.198607159, 
+            "mob_types": "3,4", 
+            "mob_amounts": "10,1"
+        }, 
+        {
+            "name": "W22", 
+            "id": 20, 
+            "duration": 12.0, 
+            "release_time": 0.188676801, 
+            "mob_types": "1,2,3,4,5", 
+            "mob_amounts": "3,4,10,5,4"
+        }, 
+        {
+            "name": "W23", 
+            "id": 21, 
+            "duration": 12.0, 
+            "release_time": 0.179242961, 
+            "mob_types": "3,4,5", 
+            "mob_amounts": "10,5,5"
+        }, 
+        {
+            "name": "W24", 
+            "id": 22, 
+            "duration": 12.0, 
+            "release_time": 0.170280813, 
+            "mob_types": "3,4,5", 
+            "mob_amounts": "10,5,5"
+        }, 
+        {
+            "name": "W25", 
+            "id": 23, 
+            "duration": 12.0, 
+            "release_time": 0.161766772, 
+            "mob_types": "3,4,5", 
+            "mob_amounts": "10,5,5"
+        }
+    ]
+}

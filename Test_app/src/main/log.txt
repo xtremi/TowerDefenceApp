@@ -1,0 +1,135 @@
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:2:
+In file included from jni/MediaBank.h:4:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\UI/AgkImage.h:3:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/glm.hpp:98:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/./core/type.hpp:32:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.hpp:115:
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:138:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int s =  (i >> 16) & 0x00008000;
+                ^~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:139:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int e = ((i >> 23) & 0x000000ff) - (127 - 15);
+                ^~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:140:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int m =   i        & 0x007fffff;
+                ^~~~~~~~~
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:2:
+In file included from jni/MediaBank.h:4:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\UI/AgkImage.h:3:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/glm.hpp:107:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/./core/func_integer.hpp:198:
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/func_integer.inl:106:95: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                        return genUType(detail::highp_int_t(1) << detail::highp_int_t(32) + detail::highp_int_t(x) - detail::highp_int_t(y));
+                                                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/func_integer.inl:106:95: note: place parentheses around the '-' expression to silence this warning
+                        return genUType(detail::highp_int_t(1) << detail::highp_int_t(32) + detail::highp_int_t(x) - detail::highp_int_t(y));
+                                                                                                                   ^
+                                                                  (                                                                        )
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:8:
+In file included from jni/CellSelectionMenu.h:5:
+In file included from jni/Cell.h:7:
+jni/Mob.h:23:30: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                debugText = new TextSprite("x", glm::vec3(1,0,0), glm::vec2(pos), 5.0f);
+                                           ^
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:11:
+jni/AnimationController.h:13:66: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                if (!animationReader.readAnimations(&animSprites, &animImages, ANIMATIONS_JSON_FILE, errmsg)) {
+                                                                               ^
+jni/AnimationController.h:4:30: note: expanded from macro 'ANIMATIONS_JSON_FILE'
+#define ANIMATIONS_JSON_FILE "json/animation_defs.json"
+                             ^
+6 warnings generated.
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:2:
+In file included from jni/MediaBank.h:4:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\UI/AgkImage.h:3:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/glm.hpp:98:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/./core/type.hpp:32:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.hpp:115:
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:138:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int s =  (i >> 16) & 0x00008000;
+                ^~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:139:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int e = ((i >> 23) & 0x000000ff) - (127 - 15);
+                ^~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:140:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int m =   i        & 0x007fffff;
+                ^~~~~~~~~
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:2:
+In file included from jni/MediaBank.h:4:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\UI/AgkImage.h:3:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/glm.hpp:107:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/./core/func_integer.hpp:198:
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/func_integer.inl:106:95: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                        return genUType(detail::highp_int_t(1) << detail::highp_int_t(32) + detail::highp_int_t(x) - detail::highp_int_t(y));
+                                                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/func_integer.inl:106:95: note: place parentheses around the '-' expression to silence this warning
+                        return genUType(detail::highp_int_t(1) << detail::highp_int_t(32) + detail::highp_int_t(x) - detail::highp_int_t(y));
+                                                                                                                   ^
+                                                                  (                                                                        )
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:8:
+In file included from jni/CellSelectionMenu.h:5:
+In file included from jni/Cell.h:7:
+jni/Mob.h:23:30: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                debugText = new TextSprite("x", glm::vec3(1,0,0), glm::vec2(pos), 5.0f);
+                                           ^
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:11:
+jni/AnimationController.h:13:66: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                if (!animationReader.readAnimations(&animSprites, &animImages, ANIMATIONS_JSON_FILE, errmsg)) {
+                                                                               ^
+jni/AnimationController.h:4:30: note: expanded from macro 'ANIMATIONS_JSON_FILE'
+#define ANIMATIONS_JSON_FILE "json/animation_defs.json"
+                             ^
+6 warnings generated.
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:2:
+In file included from jni/MediaBank.h:4:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\UI/AgkImage.h:3:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/glm.hpp:98:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/./core/type.hpp:32:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.hpp:115:
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:138:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int s =  (i >> 16) & 0x00008000;
+                ^~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:139:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int e = ((i >> 23) & 0x000000ff) - (127 - 15);
+                ^~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/type_half.inl:140:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+                register int m =   i        & 0x007fffff;
+                ^~~~~~~~~
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:2:
+In file included from jni/MediaBank.h:4:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\UI/AgkImage.h:3:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/glm.hpp:107:
+In file included from D:\AGK\AGK_libraries\apps\AGK_RELA\glm/./core/func_integer.hpp:198:
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/func_integer.inl:106:95: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                        return genUType(detail::highp_int_t(1) << detail::highp_int_t(32) + detail::highp_int_t(x) - detail::highp_int_t(y));
+                                                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+D:\AGK\AGK_libraries\apps\AGK_RELA\glm/core/func_integer.inl:106:95: note: place parentheses around the '-' expression to silence this warning
+                        return genUType(detail::highp_int_t(1) << detail::highp_int_t(32) + detail::highp_int_t(x) - detail::highp_int_t(y));
+                                                                                                                   ^
+                                                                  (                                                                        )
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:8:
+In file included from jni/CellSelectionMenu.h:5:
+In file included from jni/Cell.h:7:
+jni/Mob.h:23:30: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                debugText = new TextSprite("x", glm::vec3(1,0,0), glm::vec2(pos), 5.0f);
+                                           ^
+In file included from jni/GamePlay.cpp:1:
+In file included from jni/GamePlay.h:11:
+jni/AnimationController.h:13:66: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                if (!animationReader.readAnimations(&animSprites, &animImages, ANIMATIONS_JSON_FILE, errmsg)) {
+                                                                               ^
+jni/AnimationController.h:4:30: note: expanded from macro 'ANIMATIONS_JSON_FILE'
+#define ANIMATIONS_JSON_FILE "json/animation_defs.json"
+                             ^
+6 warnings generated.

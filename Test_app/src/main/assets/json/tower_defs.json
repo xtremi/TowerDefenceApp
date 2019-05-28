@@ -1,0 +1,529 @@
+{
+    "towers": [
+        {
+            "images": {
+                "fix": ["images/towers/T001/T001_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/T001/T001_btn.png", "images/towers/T001/T001_btn_pressed.png", "images/towers/T001/T001_btn_inactive.png"]
+            }, 
+            "name": "T001", 
+            "id": 1, 
+            "upgrades": "101,201", 
+            "range": 2.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.2, 
+            "bullet_name": "stone", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 10.0, 
+            "bullet_stats.speed": 6.0, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 10.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB001/TB001_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB001/TB001_btn.png", "images/towers/TB001/TB001_btn_pressed.png", "images/towers/TB001/TB001_btn_inactive.png"]
+            }, 
+            "name": "TB001", 
+            "id": 101, 
+            "upgrades": "102,103", 
+            "range": 3.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.5, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 15.0, 
+            "bullet_stats.speed": 6.45, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 11.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB002/TB002_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB002/TB002_btn.png", "images/towers/TB002/TB002_btn_pressed.png", "images/towers/TB002/TB002_btn_inactive.png"]
+            }, 
+            "name": "TB002", 
+            "id": 102, 
+            "upgrades": "104,105", 
+            "range": 3.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.15, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 20.0, 
+            "bullet_stats.speed": 7.095, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 12.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB003/TB003_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB003/TB003_btn.png", "images/towers/TB003/TB003_btn_pressed.png", "images/towers/TB003/TB003_btn_inactive.png"]
+            }, 
+            "name": "TB003", 
+            "id": 103, 
+            "upgrades": "105,106", 
+            "range": 3.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.2, 
+            "bullet_name": "bullet_01", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 20.0, 
+            "bullet_stats.speed": 7.8045, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 15.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB004/TB004_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB004/TB004_btn.png", "images/towers/TB004/TB004_btn_pressed.png", "images/towers/TB004/TB004_btn_inactive.png"]
+            }, 
+            "name": "TB004", 
+            "id": 104, 
+            "upgrades": "107,108", 
+            "range": 4.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.1, 
+            "bullet_name": "bullet_02", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 30.0, 
+            "bullet_stats.speed": 8.58495, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 15.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB005/TB005_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB005/TB005_btn.png", "images/towers/TB005/TB005_btn_pressed.png", "images/towers/TB005/TB005_btn_inactive.png"]
+            }, 
+            "name": "TB005", 
+            "id": 105, 
+            "upgrades": "108", 
+            "range": 4.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.5, 
+            "bullet_name": "bullet_03", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 9.443445, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB006/TB006_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB006/TB006_btn.png", "images/towers/TB006/TB006_btn_pressed.png", "images/towers/TB006/TB006_btn_inactive.png"]
+            }, 
+            "name": "TB006", 
+            "id": 106, 
+            "upgrades": "108,109", 
+            "range": 4.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.5, 
+            "bullet_name": "bullet_01", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 10.3877895, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB007/TB007_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB007/TB007_btn.png", "images/towers/TB007/TB007_btn_pressed.png", "images/towers/TB007/TB007_btn_inactive.png"]
+            }, 
+            "name": "TB007", 
+            "id": 107, 
+            "upgrades": "110,111", 
+            "range": 5.0, 
+            "rotate_speed": null, 
+            "reload_time": 1.0, 
+            "bullet_name": "bullet_02", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 11.42656845, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB008/TB008_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB008/TB008_btn.png", "images/towers/TB008/TB008_btn_pressed.png", "images/towers/TB008/TB008_btn_inactive.png"]
+            }, 
+            "name": "TB008", 
+            "id": 108, 
+            "upgrades": "111", 
+            "range": 5.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.1, 
+            "bullet_name": "bullet_03", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 12.5692253, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB009/TB009_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB009/TB009_btn.png", "images/towers/TB009/TB009_btn_pressed.png", "images/towers/TB009/TB009_btn_inactive.png"]
+            }, 
+            "name": "TB009", 
+            "id": 109, 
+            "upgrades": "111,112", 
+            "range": 5.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.1, 
+            "bullet_name": "bullet_01", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 13.82614782, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB010/TB010_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB010/TB010_btn.png", "images/towers/TB010/TB010_btn_pressed.png", "images/towers/TB010/TB010_btn_inactive.png"]
+            }, 
+            "name": "TB010", 
+            "id": 110, 
+            "upgrades": "", 
+            "range": 6.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.4, 
+            "bullet_name": "bullet_02", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 100.0, 
+            "bullet_stats.speed": 15.20876261, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 30.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB011/TB011_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB011/TB011_btn.png", "images/towers/TB011/TB011_btn_pressed.png", "images/towers/TB011/TB011_btn_inactive.png"]
+            }, 
+            "name": "TB011", 
+            "id": 111, 
+            "upgrades": "", 
+            "range": 6.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.4, 
+            "bullet_name": "bullet_03", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 100.0, 
+            "bullet_stats.speed": 16.72963887, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 30.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TB012/TB012_f.png"], 
+                "rot": [], 
+                "btn": ["images/towers/TB012/TB012_btn.png", "images/towers/TB012/TB012_btn_pressed.png", "images/towers/TB012/TB012_btn_inactive.png"]
+            }, 
+            "name": "TB012", 
+            "id": 112, 
+            "upgrades": "", 
+            "range": 6.0, 
+            "rotate_speed": null, 
+            "reload_time": 0.4, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 100.0, 
+            "bullet_stats.speed": 18.40260275, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 30.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA001/TA001_f.png"], 
+                "rot": ["images/towers/TA001/TA001_r.png"], 
+                "btn": ["images/towers/TA001/TA001_btn.png", "images/towers/TA001/TA001_btn_pressed.png", "images/towers/TA001/TA001_btn_inactive.png"]
+            }, 
+            "name": "TA001", 
+            "id": 201, 
+            "upgrades": "202,203", 
+            "range": 3.0, 
+            "rotate_speed": 2.5, 
+            "reload_time": 0.25, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 10.0, 
+            "bullet_stats.speed": 6.0, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 11.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA002/TA002_f.png"], 
+                "rot": ["images/towers/TA002/TA002_r.png"], 
+                "btn": ["images/towers/TA002/TA002_btn.png", "images/towers/TA002/TA002_btn_pressed.png", "images/towers/TA002/TA002_btn_inactive.png"]
+            }, 
+            "name": "TA002", 
+            "id": 202, 
+            "upgrades": "204,205", 
+            "range": 3.0, 
+            "rotate_speed": 3.0, 
+            "reload_time": 0.5, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 15.0, 
+            "bullet_stats.speed": 6.45, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 12.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA003/TA003_f.png"], 
+                "rot": ["images/towers/TA003/TA003_r.png"], 
+                "btn": ["images/towers/TA003/TA003_btn.png", "images/towers/TA003/TA003_btn_pressed.png", "images/towers/TA003/TA003_btn_inactive.png"]
+            }, 
+            "name": "TA003", 
+            "id": 203, 
+            "upgrades": "205,206", 
+            "range": 3.0, 
+            "rotate_speed": 3.6, 
+            "reload_time": 0.15, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 20.0, 
+            "bullet_stats.speed": 7.095, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 15.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA004/TA004_f.png"], 
+                "rot": ["images/towers/TA004/TA004_r.png"], 
+                "btn": ["images/towers/TA004/TA004_btn.png", "images/towers/TA004/TA004_btn_pressed.png", "images/towers/TA004/TA004_btn_inactive.png"]
+            }, 
+            "name": "TA004", 
+            "id": 204, 
+            "upgrades": "207,208", 
+            "range": 4.0, 
+            "rotate_speed": 4.32, 
+            "reload_time": 0.2, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 20.0, 
+            "bullet_stats.speed": 7.8045, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 15.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA005/TA005_f.png"], 
+                "rot": ["images/towers/TA005/TA005_r.png"], 
+                "btn": ["images/towers/TA005/TA005_btn.png", "images/towers/TA005/TA005_btn_pressed.png", "images/towers/TA005/TA005_btn_inactive.png"]
+            }, 
+            "name": "TA005", 
+            "id": 205, 
+            "upgrades": "208", 
+            "range": 4.0, 
+            "rotate_speed": 5.184, 
+            "reload_time": 0.1, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 2.0, 
+            "bullet_stats.damage": 30.0, 
+            "bullet_stats.speed": 8.58495, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA006/TA006_f.png"], 
+                "rot": ["images/towers/TA006/TA006_r.png"], 
+                "btn": ["images/towers/TA006/TA006_btn.png", "images/towers/TA006/TA006_btn_pressed.png", "images/towers/TA006/TA006_btn_inactive.png"]
+            }, 
+            "name": "TA006", 
+            "id": 206, 
+            "upgrades": "208,209", 
+            "range": 4.0, 
+            "rotate_speed": 6.2208, 
+            "reload_time": 0.5, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 9.443445, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA007/TA007_f.png"], 
+                "rot": ["images/towers/TA007/TA007_r.png"], 
+                "btn": ["images/towers/TA007/TA007_btn.png", "images/towers/TA007/TA007_btn_pressed.png", "images/towers/TA007/TA007_btn_inactive.png"]
+            }, 
+            "name": "TA007", 
+            "id": 207, 
+            "upgrades": "210,211", 
+            "range": 5.0, 
+            "rotate_speed": 7.46496, 
+            "reload_time": 0.5, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 10.3877895, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA008/TA008_f.png"], 
+                "rot": ["images/towers/TA008/TA008_r.png"], 
+                "btn": ["images/towers/TA008/TA008_btn.png", "images/towers/TA008/TA008_btn_pressed.png", "images/towers/TA008/TA008_btn_inactive.png"]
+            }, 
+            "name": "TA008", 
+            "id": 208, 
+            "upgrades": "211", 
+            "range": 5.0, 
+            "rotate_speed": 8.957952, 
+            "reload_time": 1.0, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 11.42656845, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA009/TA009_f.png"], 
+                "rot": ["images/towers/TA009/TA009_r.png"], 
+                "btn": ["images/towers/TA009/TA009_btn.png", "images/towers/TA009/TA009_btn_pressed.png", "images/towers/TA009/TA009_btn_inactive.png"]
+            }, 
+            "name": "TA009", 
+            "id": 209, 
+            "upgrades": "211,212", 
+            "range": 5.0, 
+            "rotate_speed": 10.7495424, 
+            "reload_time": 0.1, 
+            "bullet_name": "lazer", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 1.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 12.5692253, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 20.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA010/TA010_f.png"], 
+                "rot": ["images/towers/TA010/TA010_r.png"], 
+                "btn": ["images/towers/TA010/TA010_btn.png", "images/towers/TA010/TA010_btn_pressed.png", "images/towers/TA010/TA010_btn_inactive.png"]
+            }, 
+            "name": "TA010", 
+            "id": 210, 
+            "upgrades": "", 
+            "range": 6.0, 
+            "rotate_speed": 12.89945088, 
+            "reload_time": 0.1, 
+            "bullet_name": "stone", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 50.0, 
+            "bullet_stats.speed": 13.82614782, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 30.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA011/TA011_f.png"], 
+                "rot": ["images/towers/TA011/TA011_r.png"], 
+                "btn": ["images/towers/TA011/TA011_btn.png", "images/towers/TA011/TA011_btn_pressed.png", "images/towers/TA011/TA011_btn_inactive.png"]
+            }, 
+            "name": "TA011", 
+            "id": 211, 
+            "upgrades": "", 
+            "range": 6.0, 
+            "rotate_speed": 15.47934106, 
+            "reload_time": 0.4, 
+            "bullet_name": "stone", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 100.0, 
+            "bullet_stats.speed": 15.20876261, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 30.0
+        }, 
+        {
+            "images": {
+                "fix": ["images/towers/TA012/TA012_f.png"], 
+                "rot": ["images/towers/TA012/TA012_r.png"], 
+                "btn": ["images/towers/TA012/TA012_btn.png", "images/towers/TA012/TA012_btn_pressed.png", "images/towers/TA012/TA012_btn_inactive.png"]
+            }, 
+            "name": "TA012", 
+            "id": 212, 
+            "upgrades": "", 
+            "range": 6.0, 
+            "rotate_speed": 18.57520927, 
+            "reload_time": 0.4, 
+            "bullet_name": "stone", 
+            "bullet_stats.width": 5.0, 
+            "bullet_stats.height": 5.0, 
+            "bullet_stats.damage": 100.0, 
+            "bullet_stats.speed": 16.72963887, 
+            "bullet_stats.aoe": null, 
+            "bullet_stats.follow_target": null, 
+            "price": 30.0
+        }
+    ]
+}

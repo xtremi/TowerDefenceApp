@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>D:\AGK\AGK_libraries\apps\Test_app_tower_defence\excel_calcs\tower_input.csv D:\AGK\AGK_libraries\apps\Test_app_tower_defence\Test_app\src\main\assets\json\tower_defs.json</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>$(SolutionDir)\..\..\Test_app\src\main\data_input_files\towers.csv $(SolutionDir)\..\..\Test_app\src\main\assets\json\tower_defs.json $(SolutionDir)\..\..\Test_app\src\main\data_input_files\mobs.csv $(SolutionDir)\..\..\Test_app\src\main\assets\json\mob_defs.json $(SolutionDir)\..\..\Test_app\src\main\data_input_files\waves.csv $(SolutionDir)\..\..\Test_app\src\main\assets\json\wave_defs.json $(SolutionDir)\..\..\Test_app\src\main\data_input_files\bullets.csv $(SolutionDir)\..\..\Test_app\src\main\assets\json\bullet_defs.json dump</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

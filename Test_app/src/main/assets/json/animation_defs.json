@@ -1,0 +1,108 @@
+{
+    "animations": [
+        {
+            "id": "red-explode", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\red-explode\\redexplode", 
+            "start_n": 4, 
+            "end_n": 36, 
+            "n_padded_0": 4
+        }, 
+        {
+            "id": "white-explode", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\white-explode\\explodewhite", 
+            "start_n": 3, 
+            "end_n": 46, 
+            "n_padded_0": 4
+        }, 
+        {
+            "id": "blue-flash", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\blue-flash\\DebrisExplode", 
+            "start_n": 6, 
+            "end_n": 50, 
+            "n_padded_0": 4
+        }, 
+        {
+            "id": "dynamite", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\dynamite\\dynoexplode", 
+            "start_n": 2, 
+            "end_n": 50, 
+            "n_padded_0": 4
+        }, 
+        {
+            "id": "short-expl-01", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-1\\explosion-1-", 
+            "start_n": 1, 
+            "end_n": 6, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-02", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-2\\explosion-2-", 
+            "start_n": 1, 
+            "end_n": 6, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-03", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-3\\", 
+            "start_n": 1, 
+            "end_n": 8, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-04", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-4\\", 
+            "start_n": 1, 
+            "end_n": 6, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-05", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-5\\explosion-5-", 
+            "start_n": 1, 
+            "end_n": 10, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-06", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-6\\explosion-6-", 
+            "start_n": 1, 
+            "end_n": 10, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-07", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-7\\", 
+            "start_n": 1, 
+            "end_n": 9, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-08", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-8\\", 
+            "start_n": 1, 
+            "end_n": 9, 
+            "n_padded_0": 2
+        }, 
+        {
+            "id": "short-expl-09", 
+            "type": "multi", 
+            "prefix": "images\\explosions\\short\\explosion-9\\", 
+            "start_n": 1, 
+            "end_n": 9, 
+            "n_padded_0": 2
+        }
+    ]
+}

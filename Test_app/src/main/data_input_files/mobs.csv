@@ -1,0 +1,6 @@
+name,id,health,armor1,armor2,armor3,speed_min,speed_max,size.x,size.y,reward
+Ball_01,1,25,1,1,1,0.8,0.8,10,-1,10
+Car_01,2,40,1,1,1,1.1,1.1,10,-1,15
+Planet_01,3,60,1,1,1,0.75,0.75,10,-1,20
+Spaceship_01,4,80,1,1,1,1.3,1.3,10,-1,25
+Spider_01,5,100,1,1,1,1.3,1.3,10,-1,30

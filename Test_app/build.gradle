@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+    sourceSets.main.jni.srcDirs = []
+
+    defaultConfig {
+        applicationId "com.mycompany.mytemplate"
+        minSdkVersion 15
+        targetSdkVersion 26
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            /*debuggable true*/
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':FacebookSDK')
+    compile 'com.google.android.gms:play-services-ads:15.0.0'
+    compile 'com.google.android.gms:play-services-plus:15.0.0'
+    compile 'com.google.android.gms:play-services-games:15.0.0'
+    compile 'com.google.android.gms:play-services-location:15.0.0'
+    compile 'com.google.android.gms:play-services-auth:15.0.0'
+    compile 'com.google.firebase:firebase-analytics:15.0.0'
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile files('libs/chartboost.jar')
+    compile files('libs/amazon-ads-5.8.2.jar')
+    implementation 'com.google.ar:core:1.6.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.6'
+    compile "com.google.firebase:firebase-messaging:15.0.0"
+    implementation 'com.google.api-client:google-api-client:1.23.0'
+    implementation 'com.google.api-client:google-api-client-android:1.23.0'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+    implementation files('libs/YouTubeAndroidPlayerAPI.jar')
+}
+
+configurations {
+    all {
+        exclude module: 'httpclient'
+        exclude module: 'commons-logging'
+    }
+}
