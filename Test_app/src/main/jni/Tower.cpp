@@ -3,8 +3,9 @@
 int BULLET_COUNT = 0;
 
 Tower::Tower(TowerDescriptor* _towerDescriptor) : Building() {
-	initDebugTextSprites();	
+	
 	upgradeTo(_towerDescriptor);
+	initDebugTextSprites();
 	currentAimAngle = 0.0f;
 	//aimDir = orientation;
 
@@ -16,8 +17,13 @@ Tower::Tower(TowerDescriptor* _towerDescriptor) : Building() {
 		newBullet->hide();
 	}
 #endif
-
 }
+
+int Tower::getBuildingID() {
+	return towerDescriptor->ID;
+}
+
+
 
 void Tower::upgradeTo(TowerDescriptor* newTowerDescriptor) {
 	towerDescriptor = newTowerDescriptor;
@@ -58,12 +64,27 @@ void Tower::loadBuildingSprites() {
 		sprites.push_back(s);
 	}
 }
-void Tower::deleteBuildingSprites() {
-	for (AgkSprite* s : sprites) {
-		s->deleteSprite();
-		delete s;
+
+void Tower::deleteBuilding() {
+	Building::deleteBuilding();
+	deleteBulletSprites();
+}
+
+void Tower::deleteBulletSprites() {
+	for (Bullet* b : idleBullets) {
+		b->deleteSprite();
+		delete b;
 	}
-	sprites.clear();
+	for (Bullet* b : activeBullets) {
+		b->deleteSprite();
+		delete b;
+	}
+	idleBullets.clear();
+	activeBullets.clear();
+}
+
+void Tower::deleteBuildingSprites() {
+	Building::deleteBuildingSprites();
 	rotSprites.clear();
 }
 

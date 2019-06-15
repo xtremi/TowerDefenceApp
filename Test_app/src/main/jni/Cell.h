@@ -41,8 +41,10 @@ public:
 	bool positionIsPassedCellCenter(const glm::vec2& pos);
 	bool positionIsPassedCellDiagonal(const glm::vec2& pos);
 
+	void setBuildingRefOnly(Building* bld);
 	void setBuilding(Building* bld);
 	Building* getBuilding() { return building; }
+	void deleteBuilding();
 
 	Mob* firstMob();
 	Mob* nextMob();

@@ -51,6 +51,9 @@ public:
 	void setCellRowValidState(int row, bool state);
 	void setCellRowsValidState(int rowFrom, int rowTo, bool state);
 
+	std::vector<Cell*> getNeighbouringCells(int x, int y);
+	bool buildingCanUpgradeToMega(int x, int y);
+
 private:
 	std::vector<std::vector<Cell>> cells;
 	std::set<Cell*/*, CellCmpr*/> cellContainingMobs;

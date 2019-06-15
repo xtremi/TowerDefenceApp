@@ -108,10 +108,19 @@ bool Cell::positionIsPassedCellDiagonal(const glm::vec2& pos) {
 	return false;
 }
 
+void Cell::deleteBuilding() {
+	if(this->building){
+		this->building->deleteBuilding();
+		this->building = NULL;
+	}
+}
 
 //This should maybe be done in Map class?
-void Cell::setBuilding(Building* bld) {
+void Cell::setBuildingRefOnly(Building* bld) {
 	building = bld;
+}
+void Cell::setBuilding(Building* bld) {
+	setBuildingRefOnly(bld);
 	building->setPosition(this->posCenter(), maploc[0], maploc[1]);
 }
 

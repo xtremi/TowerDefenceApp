@@ -17,6 +17,8 @@ public:
 
 	Tower* addNewTower(Cell* cell, Map* map);
 	Tower* upgradeTower(Cell* cell, Map* map, int towerID);
+	Tower* upgradeTowerToMega(Cell* cell, Map* map);
+
 
 	void assignCellsInRange_circleArea(Tower* twr, Map* map, std::vector<Cell*>& cellsInRange);
 	void assignCellsInRange_straightLine(Tower* twr, Map* map, std::vector<Cell*>& cellsInRange);
@@ -56,6 +58,10 @@ private:
 	std::vector<Building*>	buildings;
 	int towerIter = 0;
 	float profit = 0.0f;
+
+	void removeTower(Tower* t);
+	void removeBuilding(Building* t);
+
 
 	std::map<int, TowerDescriptor> towerDescriptors;	
 	std::map<int, TowerDescriptor>::iterator towerDescrIt;

@@ -140,6 +140,7 @@ public:
 	//bool buttonWasConfirmed(int btnid);
 	//bool getButtonState(int btnid);
 
+	void setButtonInactive(int buttonID);
 	void cancel();
 	bool isActive();
 	void update();

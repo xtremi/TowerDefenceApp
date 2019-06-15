@@ -70,6 +70,7 @@ private:
 	void initCellSelectionMenu();
 	void initCellSelectionMarker();
 	void cellIsSelected();
+	void megaCellisSelected();
 	void cellWithBuildingIsSelected();
 	void cellSelectionChanged(Cell* newCell);
 	void emptyCellIsSelected();
@@ -87,7 +88,8 @@ private:
 
 	float money = 0.0f;
 
-	void setTestTowers();
+	void setTestTowers1();
+	void setTestTowers2();
 	void createTowerRow(int startX, int nTowers, int y, int towerID);
 
 };

@@ -11,6 +11,37 @@ void Building::setPosition(const glm::vec2& pos, int locx, int locy) {
 		ts->setPosition(pos);
 }
 
+void Building::deleteBuildingSprites() {
+	for (AgkSprite* s : sprites) {
+		s->deleteSprite();
+		delete s;
+	}
+	sprites.clear();
+}
+
+void Building::deleteDebugTextSprites() {
+	for (AgkSprite* s : debug_buildingStats) {
+		s->deleteSprite();
+		delete s;
+	}
+	debug_buildingStats.clear();
+}
+void Building::deleteDebugSprites() {
+	for (AgkSprite* s : debug_cellsInRange) {
+		s->deleteSprite();
+		delete s;
+	}
+	debug_cellsInRange.clear();
+}
+void Building::deleteAllDebugSprites() {
+	deleteDebugTextSprites();
+	deleteDebugSprites();
+}
+
+void Building::deleteBuilding() {
+	deleteAllDebugSprites();
+	deleteBuildingSprites();
+}
 
 void Building::setCellsInRange(std::vector<Cell*> cells) {
 	cellsInRange = cells;
@@ -28,11 +59,7 @@ Cell* Building::nextCellInRange() {
 
 void Building::debug_setupHighlightCellsInRange() {
 	
-	for (int i = 0; i < debug_cellsInRange.size(); i++) {
-		debug_cellsInRange[i]->deleteSprite();
-		delete debug_cellsInRange[i];
-	}
-	debug_cellsInRange.clear();
+	deleteDebugSprites();
 	
 	for (Cell* c : cellsInRange) {
 		Sprite* s = new Sprite(glm::vec3(1, 0, 0), c->posCenter(), glm::vec2(CELL_SIZE));
@@ -52,4 +79,11 @@ void Building::setDirection(const glm::vec2& dir) {
 
 void Building::face(direction dir) {
 	setDirection(getDirectionAsVector(dir));
+}
+
+void Building::megafy() {
+	for (AgkSprite* s : sprites) {
+		s->setSize(glm::vec2(CELL_SIZE * 3.0f));
+	}
+	_buildingSizeUpgrade = building_size_upgrade::mega;
 }

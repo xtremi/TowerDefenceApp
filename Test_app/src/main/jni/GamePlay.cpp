@@ -16,7 +16,17 @@ GamePlay::GamePlay()
 	}
 }
 
-void GamePlay::setTestTowers() {
+void GamePlay::setTestTowers2() {
+	createTowerRow(14, 3, 6, 202);
+	createTowerRow(14, 3, 7, 202);
+	createTowerRow(14, 3, 8, 202);
+
+	createTowerRow(17, 3, 6, 102);
+	createTowerRow(17, 3, 7, 102);
+	createTowerRow(17, 3, 8, 102);
+}
+
+void GamePlay::setTestTowers1() {
 	createTowerRow(15, 7, 4, 202);
 	createTowerRow(13, 7, 6, 202);
 	createTowerRow(5, 14, 8, 202);
@@ -41,7 +51,7 @@ void GamePlay::setTestTowers() {
 void GamePlay::createTowerRow(int startX, int nTowers, int y, int towerID) {
 	for (int i = 0; i < nTowers; i++) {
 		buildingControl.addNewTower(map.getCell(startX + i, y), &map);
-		buildingControl.upgradeTower(map.getCell(startX + i, y), &map, 202);
+		buildingControl.upgradeTower(map.getCell(startX + i, y), &map, towerID);
 	}
 }
 
@@ -113,7 +123,7 @@ void GamePlay::reset(int lvl)
 
 	this->money = 1000.0f;
 
-	//setTestTowers();
+	setTestTowers2();
 }
 
 
@@ -301,13 +311,20 @@ bool GamePlay::processCellSelectionMenuInput()
 			}
 		}
 		else {
-			if(confirmedButton == 1000)
+			if(confirmedButton == 1000){
 				startTowerDirectionSelection();
+			}
+			else if (confirmedButton == 1001) {
+				buildingControl.upgradeTowerToMega(selectedCell, &map);
+				megaCellisSelected();
+			}
 			else{
 				Tower* t = buildingControl.upgradeTower(selectedCell, &map, confirmedButton);
 				cost = t->getDescriptor()->price;
 			}
 		}		
+
+
 		cellSelectionMenu->cancel();
 		showTowerDataInFrame(hud.getTowerInfoFrame(), (Tower*)selectedCell->getBuilding());
 		hud.towerUpgradeFrameAppear();
@@ -325,9 +342,23 @@ Brings up the cell selection marker
 void GamePlay::cellIsSelected()
 {
 	cellSelectionMarker->show();
+	cellSelectionMarker->setScale(1.0f);
 	cellSelectionMarker->setPosition(selectedCell->getPos() + CELL_SIZE / 2.0f);
+	
+	if (selectedCell->getBuilding())
+	{
+		if(selectedCell->getBuilding()->buildingSizeUpgrade() == building_size_upgrade::mega)
+		{
+			megaCellisSelected();
+		}
+	}
 }
 
+void GamePlay::megaCellisSelected()
+{
+	cellSelectionMarker->setPosition(selectedCell->getBuilding()->getPosition());
+	cellSelectionMarker->setScale(3.0f);
+}
 
 /*
 Called when a cell is selected while a different cell was already selected.
@@ -355,14 +386,28 @@ void GamePlay::cellSelectionChanged(Cell* newCell) {
 void GamePlay::startCellSelectionMenu() {
 	
 	std::vector<int> buttonIDs;
-	if(selectedCell->getBuilding() && selectedCell->getBuilding()->isTower()){
+	bool mega_upgrade_enabled = false;
+	bool cell_is_empty = !selectedCell->getBuilding();
+	bool is_megafied = cell_is_empty ? false : selectedCell->getBuilding()->buildingSizeUpgrade() == building_size_upgrade::mega;
+
+	if(!cell_is_empty && selectedCell->getBuilding()->isTower()){
 		buttonIDs = ((Tower*)selectedCell->getBuilding())->getDescriptor()->upgradable;
-		buttonIDs.push_back(1000);
+		buttonIDs.push_back(1000);	//direction button
+		
+		//Only add upgrade button is not already upgraded:
+		if(!is_megafied){
+			buttonIDs.push_back(1001);	//upgrade size button
+			mega_upgrade_enabled = map.buildingCanUpgradeToMega(selectedCell->mapLocX(), selectedCell->mapLocY());
+		}
 	}
-	else if (!selectedCell->getBuilding()) {
+	else if (cell_is_empty) {
 		buttonIDs.push_back(1);
 	}
+
 	cellSelectionMenu->display(selectedCell->getPos() + CELL_SIZE / 2.0f, buttonIDs);
+
+	if(is_megafied || (!mega_upgrade_enabled && !cell_is_empty))
+		cellSelectionMenu->setButtonInactive(1001);
 }
 void GamePlay::startTowerDirectionSelection() {
 	towerDirectionMenu->show();
@@ -486,6 +531,10 @@ void GamePlay::initCellSelectionMenu()
 	btnImgsbtn.push_back(GETIMG(SET_BUILDING_DIR_BUTTON_IMAGE));
 	btnImgsPressed.push_back(GETIMG(SET_BUILDING_DIR_BUTTON_P_IMAGE));
 	btnImgsInactive.push_back(GETIMG(SET_BUILDING_DIR_BUTTON_I_IMAGE));
+	buttonIDs.push_back(1001);
+	btnImgsbtn.push_back(GETIMG(UPGRADE_TOWER_BUTTON_IMAGE));
+	btnImgsPressed.push_back(GETIMG(UPGRADE_TOWER_BUTTON_P_IMAGE));
+	btnImgsInactive.push_back(GETIMG(UPGRADE_TOWER_BUTTON_I_IMAGE));
 
 	cellSelectionMenu = new CellSelectionMenu2(buttonIDs, btnImgsbtn, btnImgsPressed, btnImgsInactive);
 }

@@ -33,6 +33,11 @@ void CellSelectionMenu2::display(const glm::vec2& pos, const std::vector<int>& b
 	active = true;
 }
 
+void CellSelectionMenu2::setButtonInactive(int buttonID) {
+	if (buttons.find(buttonID) != buttons.end())
+		buttons[buttonID]->setActiveState(false);
+}
+
 void CellSelectionMenu2::cancel() {
 	for (int btnID : activeButtons)
 		buttons[btnID]->hide();

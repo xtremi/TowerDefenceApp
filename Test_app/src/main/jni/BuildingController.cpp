@@ -16,6 +16,40 @@ Tower* BuildingController::upgradeTower(Cell* cell, Map* map, int towerID) {
 	return (Tower*)currentBuilding;
 }
 
+Tower* BuildingController::upgradeTowerToMega(Cell* cell, Map* map) {
+
+	Tower* centerTower = (Tower*)cell->getBuilding();
+	centerTower->megafy();
+
+	std::vector<Cell*> neighbourCells = map->getNeighbouringCells(cell->mapLocX(), cell->mapLocY());
+	for (Cell* c : neighbourCells) {
+		Tower* tower = (Tower*)c->getBuilding();
+		if (tower) {
+			c->deleteBuilding();
+			removeTower(tower);
+		}
+		c->setBuildingRefOnly(centerTower);
+	}
+
+	return centerTower;
+}
+
+void BuildingController::removeTower(Tower* t) {
+	std::vector<Tower*>::iterator p = std::find(towers.begin(), towers.end(), t);
+	if (p != towers.end()) 
+		towers.erase(p);
+	delete t;
+}
+
+void BuildingController::removeBuilding(Building* b) {
+	std::vector<Building*>::iterator p = std::find(buildings.begin(), buildings.end(), b);
+	if (p != buildings.end())
+		buildings.erase(p);
+	delete b;
+}
+
+
+
 void BuildingController::assignCellsInRange_circleArea(Tower* twr, Map* map, std::vector<Cell*>& cellsInRange) {
 	float		r = twr->getRange();
 	int			mx = twr->getLocX();

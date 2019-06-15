@@ -308,3 +308,35 @@ bool Map::isOnWestBorder(int x) {
 bool Map::isOnEastBorder(int x) {
 	return x == (dimx - 1 - N_BORDER_CELL);
 }
+
+std::vector<Cell*> Map::getNeighbouringCells(int x, int y) {
+
+	std::vector<Cell*> neighbours;
+	static const int ddx[8] = { -1, 0, 1, -1, 1, -1, 0, 1 };
+	static const int ddy[8] = { -1, -1, -1, 0, 0, 1, 1, 1 };
+
+	for (int i = 0; i < 8; i++) {
+		int nx = x + ddx[i];
+		int ny = y + ddy[i];
+		neighbours.push_back(getCell(nx, ny));
+	}
+	return neighbours;
+}
+
+bool Map::buildingCanUpgradeToMega(int x, int y) {
+	Cell* cell = getCell(x, y);
+	if (!cell || !cell->getBuilding())
+		return false;
+
+	int buildingTypeID = cell->getBuilding()->getBuildingID();
+
+	std::vector<Cell*> neighbourCells = getNeighbouringCells(x, y);
+	for (Cell* c : neighbourCells) {
+		if (!c || !c->getBuilding())
+			return false;
+		if (c->getBuilding()->getBuildingID() != buildingTypeID)
+			return false;
+	}
+
+	return true;
+}
