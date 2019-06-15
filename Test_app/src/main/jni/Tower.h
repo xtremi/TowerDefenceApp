@@ -34,7 +34,7 @@ private:
 
 };
 
-/*class TowerAimless : public Tower {
+class TowerAimless : public Tower {
 
 };
 class TowerAim : public Tower {
@@ -42,10 +42,10 @@ class TowerAim : public Tower {
 };
 class TowerMissile : public Tower {
 
-};*/
+};
 
 /*NEW*/
-/*class Tower : public Building 
+class Tower : public Building 
 {
 public:
 	Tower(TowerDescriptor* _towerDescriptor);	
@@ -124,10 +124,10 @@ protected:
 	bool isInSight		= false;		//The tower has a mob in sight, and can shoot at it.
 	bool isStationary	= false;		//The tower has no mob in range, and has reached its "resting" direction (orientation)
 
-};*/
+};
 
 
-
+/*
 class Tower : public Building
 {
 public:
@@ -223,4 +223,4 @@ protected:
 	
 
 };
-
+*/
