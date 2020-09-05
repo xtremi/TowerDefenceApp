@@ -7,7 +7,7 @@
 ChainBullet::ChainBullet(AgkImage* img, const glm::vec2& pos, float _range, 
 	float _timer_max, int _maxChildren, int _nestingLimit, float _expandTime, 
 	int _shaderID/*, CellRange* _cellsRange*/)
-	: Bullet(img, pos, glm::vec2(CELL_SIZE))
+	: Bullet(img, pos, glm::vec2(CELL_SIZE)), MultiTargetBullet()
 {
 	//cellRange		= _cellsRange;
 	range			= _range;
@@ -141,8 +141,7 @@ void ChainBullet::addLazerTargets(ChainElement* ce, Map* map) {
 	for (Cell* c : cellsAlongLine) {
 		for (Mob* m = c->firstMob(); m; m = c->nextMob()) {
 			if (agk::GetSpriteCollision(ce->getID(), m->getID())) {
-				allTargets.insert(m);
-				newTargets.insert(m);
+				addTarget(m);
 			}
 		}
 	}
@@ -162,7 +161,7 @@ void ChainBullet::getNewTargetsForChildElement(ChainElement* ce, int nTargets, M
 			if (allTargets.find(mob) == allTargets.end()) {
 				float targetDistance = glm::distance(ce->getPos(), mob->getPos());
 				if(targetDistance < range)
-					allMobsInRange.push_back(mob); 				
+					allMobsInRange.push_back(mob);
 			}
 				
 		}
@@ -183,8 +182,7 @@ void ChainBullet::getNewTargetsForChildElement(ChainElement* ce, int nTargets, M
 				int randomIndex = agk::Random(0, allMobsInRange.size() - 1);
 				Mob* m = allMobsInRange[randomIndex];
 				if ((newTargets.find(m) == newTargets.end())) {
-					newTargets.insert(m);
-					allTargets.insert(m);
+					addTarget(m);
 					ce->addNewChainTarget(m);
 					foundNewMob = true;
 				}
@@ -210,15 +208,7 @@ void ChainBullet::addTarget(Mob* m){
 	allTargets.insert(m);
 	newTargets.insert(m);
 }
-std::set<Mob*>* ChainBullet::getCurrentTargets() {
-	return &allTargets;
-}
-std::set<Mob*>* ChainBullet::getNewTargets() {
-	return &newTargets;
-}
-std::set<Mob*>* ChainBullet::getReleasedTargets() {
-	return &releasedTargets;
-}
+
 
 void ChainBullet::dump() {
 	for (int i = 0; i < 14; i++)

@@ -62,6 +62,15 @@ void Bullet::reset() {
 }
 
 
+std::set<Mob*>* MultiTargetBullet::getCurrentTargets() {
+	return &allTargets;
+}
+std::set<Mob*>* MultiTargetBullet::getNewTargets() {
+	return &newTargets;
+}
+std::set<Mob*>* MultiTargetBullet::getReleasedTargets() {
+	return &releasedTargets;
+}
 
 /*
 	Check the cells in radius <rad> around location <loc> for roadcells.

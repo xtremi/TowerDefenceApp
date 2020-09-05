@@ -211,7 +211,8 @@ void CellRange::assignCells(const std::vector<Cell*>& cells, const glm::vec2& _c
 
 Mob* CellRange::firstMobInRange(bool checkRealRange){
 	cellIt = firstCellInRange();
-	mobIt  = nullptr;
+	mobIt = nullptr;
+	if (!cellIt) return false;	
 	return nextMobInRange(checkRealRange);
 }
 Mob* CellRange::nextMobInRange(bool checkRealRange) {

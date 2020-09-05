@@ -42,6 +42,21 @@ protected:
 	Mob* targetMob = nullptr;
 };
 
+
+class MultiTargetBullet {
+public:
+	MultiTargetBullet(){}
+
+	std::set<Mob*>* getCurrentTargets();
+	std::set<Mob*>* getNewTargets();
+	std::set<Mob*>* getReleasedTargets();
+
+protected:
+	std::set<Mob*>			allTargets;
+	std::set<Mob*>			newTargets;
+	std::set<Mob*>			releasedTargets;
+};
+
 class CellTargetedBullet {
 public:
 	CellTargetedBullet() {}

@@ -5,6 +5,14 @@ TowerAimless::TowerAimless(TowerDescriptor* _towerDescriptor)
 {	
 }
 
+void TowerAimless::init(Cell* cell) {
+	Tower::init(cell);
+	if (towerDescriptor->bulletStats.type == bullet_type::lazer) {
+		for (Bullet* blt : idleBullets)
+			((LazerBullet*)blt)->setLazerNotFollowTarget();
+	}
+}
+
 void TowerAimless::setDirection(const glm::vec2& dir)
 {
 	Tower::setDirection(dir);
@@ -23,6 +31,7 @@ void TowerAimless::postSetCellsInRange() {
 void TowerAimless::chooseTarget(Map* map) {
 	
 	if (towerDescriptor->bulletStats.type == bullet_type::chain ||
+		towerDescriptor->bulletStats.type == bullet_type::lazer||
 		towerDescriptor->bulletStats.type == bullet_type::follow ||
 		towerDescriptor->bulletStats.type == bullet_type::path)
 	{

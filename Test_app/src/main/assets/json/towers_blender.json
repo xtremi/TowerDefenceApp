@@ -1,14 +1,11 @@
 {
  "towers": [
   {
-   "name": "Basic aimless tower",
-   "id": "TAL101",
+   "name": " Aimless fire I",
+   "id": "TAL203",
    "type": "aimless",
    "upgrades": [
-    "TAL201",
-    "TAL202",
-    "TAL203",
-    "TAL204"
+    "TAL303"
    ],
    "rotate_speed": 0.0,
    "reload_time": 0.5,
@@ -16,16 +13,16 @@
    "ndir": 1,
    "price": 10.0,
    "bullet": {
-    "img": "stone",
+    "img": "burn",
     "buffer": 1,
     "size": [
-     4,
-     4
+     25,
+     25
     ],
     "type": "normal",
     "hiteffect": {
      "vis": "none",
-     "type": "damage",
+     "type": "debuff",
      "animation": {
       "img": "",
       "size": [
@@ -37,13 +34,13 @@
     },
     "values": {
      "v": [
-      20.0,
-      10.0,
-      0.0
+      0.800000011920929,
+      0.0,
+      1.0
      ],
      "w": [
-      0.0,
-      0.0,
+      2.5,
+      0.20000000298023224,
       0.0
      ],
      "z": [
@@ -52,7 +49,7 @@
       0.0
      ],
      "a": [
-      "",
+      "DOT",
       "",
       ""
      ],
@@ -70,13 +67,325 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TAL101/TAL101_f.png"
+     "images/towers_blender/TAL203/TAL203_f.png"
     ],
     "icon": [
-     "images/towers_blender/TAL101/TAL101_icon_256x256.png"
+     "images/towers_blender/TAL203/TAL203_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TAL101/TAL101_icon_512x512p.png"
+     "images/towers_blender/TAL203/TAL203_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Aimless lazer II",
+   "id": "TAL304",
+   "type": "aimless",
+   "upgrades": [
+    "TAL404"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "",
+    "buffer": 1,
+    "size": [
+     4,
+     1
+    ],
+    "type": "lazer",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage-over-time",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      1.100000023841858,
+      0.0,
+      0.6000000238418579
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "chain-electro-1",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL304/TAL304_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL304/TAL304_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL304/TAL304_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Aimless lazer III",
+   "id": "TAL404",
+   "type": "aimless",
+   "upgrades": [
+    "TAL504"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 3.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "",
+    "buffer": 1,
+    "size": [
+     5,
+     1
+    ],
+    "type": "lazer",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage-over-time",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      1.5,
+      0.0,
+      0.5
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "chain-electro-1",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL404/TAL404_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL404/TAL404_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL404/TAL404_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Aimless lazer IV",
+   "id": "TAL504",
+   "type": "aimless",
+   "upgrades": [
+    "TAL604"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "",
+    "buffer": 1,
+    "size": [
+     5,
+     1
+    ],
+    "type": "lazer",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage-over-time",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      2.0,
+      0.0,
+      0.5
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "chain-electro-1",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL504/TAL504_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL504/TAL504_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL504/TAL504_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Aimless lazer V",
+   "id": "TAL604",
+   "type": "aimless",
+   "upgrades": [
+    ""
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 100.0,
+   "bullet": {
+    "img": "",
+    "buffer": 1,
+    "size": [
+     8,
+     2
+    ],
+    "type": "lazer",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage-over-time",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      3.0,
+      0.0,
+      0.5
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "chain-electro-1",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL604/TAL604_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL604/TAL604_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL604/TAL604_icon_512x512p.png"
     ],
     "rot": []
    }
@@ -162,6 +471,1179 @@
     "rot": [
      "images/towers_blender/T001/T001_r.png"
     ]
+   }
+  },
+  {
+   "name": "Fire storm I",
+   "id": "TAL303",
+   "type": "aimless",
+   "upgrades": [
+    "TAL403"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "burn",
+    "buffer": 1,
+    "size": [
+     25,
+     25
+    ],
+    "type": "area-spawn-long",
+    "hiteffect": {
+     "vis": "none",
+     "type": "debuff",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      0.800000011920929,
+      0.0,
+      1.0
+     ],
+     "w": [
+      2.5,
+      0.20000000298023224,
+      0.0
+     ],
+     "z": [
+      0.0,
+      20.0,
+      0.0
+     ],
+     "a": [
+      "DOT",
+      "rotation",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 1.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL303/TAL303_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL303/TAL303_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL303/TAL303_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Fire storm II",
+   "id": "TAL403",
+   "type": "aimless",
+   "upgrades": [
+    "TAL503"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "burn",
+    "buffer": 1,
+    "size": [
+     25,
+     25
+    ],
+    "type": "area-spawn-long",
+    "hiteffect": {
+     "vis": "none",
+     "type": "debuff",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      0.800000011920929,
+      0.0,
+      1.0
+     ],
+     "w": [
+      2.5,
+      0.20000000298023224,
+      0.0
+     ],
+     "z": [
+      0.0,
+      20.0,
+      0.0
+     ],
+     "a": [
+      "DOT",
+      "rotation",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 1.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL403/TAL403_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL403/TAL403_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL403/TAL403_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Fire storm III",
+   "id": "TAL503",
+   "type": "aimless",
+   "upgrades": [
+    "TAL603"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "burn",
+    "buffer": 1,
+    "size": [
+     25,
+     25
+    ],
+    "type": "area-spawn-long",
+    "hiteffect": {
+     "vis": "none",
+     "type": "debuff",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      0.800000011920929,
+      0.0,
+      1.0
+     ],
+     "w": [
+      2.5,
+      0.20000000298023224,
+      0.0
+     ],
+     "z": [
+      0.0,
+      20.0,
+      0.0
+     ],
+     "a": [
+      "DOT",
+      "rotation",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 1.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL503/TAL503_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL503/TAL503_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL503/TAL503_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Fire storm IV",
+   "id": "TAL603",
+   "type": "aimless",
+   "upgrades": [
+    ""
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "burn",
+    "buffer": 1,
+    "size": [
+     25,
+     25
+    ],
+    "type": "area-spawn-long",
+    "hiteffect": {
+     "vis": "none",
+     "type": "debuff",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      0.800000011920929,
+      0.0,
+      1.0
+     ],
+     "w": [
+      2.5,
+      0.20000000298023224,
+      0.0
+     ],
+     "z": [
+      0.0,
+      20.0,
+      0.0
+     ],
+     "a": [
+      "DOT",
+      "rotation",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 1.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL603/TAL603_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL603/TAL603_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL603/TAL603_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless",
+   "id": "TAL101",
+   "type": "aimless",
+   "upgrades": [
+    "TAL201",
+    "TAL202"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     4,
+     4
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      20.0,
+      10.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL101/TAL101_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL101/TAL101_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL101/TAL101_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless fast I",
+   "id": "TAL202",
+   "type": "aimless",
+   "upgrades": [
+    "TAL302",
+    "TAL204"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.25,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "lazer",
+    "buffer": 2,
+    "size": [
+     3,
+     1
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      15.0,
+      14.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL202/TAL202_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL202/TAL202_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL202/TAL202_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless fast II",
+   "id": "TAL302",
+   "type": "aimless",
+   "upgrades": [
+    "TAL402"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.20000000298023224,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "lazer",
+    "buffer": 3,
+    "size": [
+     3,
+     1
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       25.0,
+       25.0
+      ],
+      "fps": 9.0
+     }
+    },
+    "values": {
+     "v": [
+      15.0,
+      14.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL302/TAL302_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL302/TAL302_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL302/TAL302_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless fast III",
+   "id": "TAL402",
+   "type": "aimless",
+   "upgrades": [
+    "TAL502"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.15000000596046448,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "lazer",
+    "buffer": 4,
+    "size": [
+     3,
+     1
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       25.0,
+       25.0
+      ],
+      "fps": 9.0
+     }
+    },
+    "values": {
+     "v": [
+      20.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL402/TAL402_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL402/TAL402_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL402/TAL402_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless fast IV",
+   "id": "TAL502",
+   "type": "aimless",
+   "upgrades": [
+    "TAL602"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.11999999731779099,
+   "range": 5.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "lazer",
+    "buffer": 5,
+    "size": [
+     3,
+     1
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      10.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      2.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL502/TAL502_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL502/TAL502_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL502/TAL502_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless fast V",
+   "id": "TAL602",
+   "type": "aimless",
+   "upgrades": [
+    ""
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 0.10000000149011612,
+   "range": 6.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "lazer",
+    "buffer": 6,
+    "size": [
+     3,
+     1
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      25.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      2.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL602/TAL602_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL602/TAL602_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL602/TAL602_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless strong I",
+   "id": "TAL201",
+   "type": "aimless",
+   "upgrades": [
+    "TAL301",
+    "TAL203"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 1.0,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     5,
+     5
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      50.0,
+      14.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 2.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL201/TAL201_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL201/TAL201_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL201/TAL201_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless strong II",
+   "id": "TAL301",
+   "type": "aimless",
+   "upgrades": [
+    "TAL401"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 1.25,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     5,
+     5
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      100.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 2.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL301/TAL301_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL301/TAL301_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL301/TAL301_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless strong III",
+   "id": "TAL401",
+   "type": "aimless",
+   "upgrades": [
+    "TAL501"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 1.5,
+   "range": 3.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     6,
+     6
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      180.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 1.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL401/TAL401_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL401/TAL401_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL401/TAL401_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless strong IV",
+   "id": "TAL501",
+   "type": "aimless",
+   "upgrades": [
+    "TAL601"
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 1.5,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     7,
+     7
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      250.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 1.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL501/TAL501_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL501/TAL501_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL501/TAL501_icon_512x512p.png"
+    ],
+    "rot": []
+   }
+  },
+  {
+   "name": "Standard aimless strong V",
+   "id": "TAL601",
+   "type": "aimless",
+   "upgrades": [
+    ""
+   ],
+   "rotate_speed": 0.0,
+   "reload_time": 2.0,
+   "range": 6.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     8,
+     8
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      1000.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 2.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TAL601/TAL601_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TAL601/TAL601_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TAL601/TAL601_icon_512x512p.png"
+    ],
+    "rot": []
    }
   },
   {
@@ -352,7 +1834,7 @@
     "type": "lazer",
     "hiteffect": {
      "vis": "none",
-     "type": "damage",
+     "type": "damage-over-time",
      "animation": {
       "img": "",
       "size": [
@@ -675,10 +2157,10 @@
      5,
      5
     ],
-    "type": "chain",
+    "type": "lazer",
     "hiteffect": {
      "vis": "none",
-     "type": "damage",
+     "type": "damage-over-time",
      "animation": {
       "img": "",
       "size": [
@@ -690,7 +2172,7 @@
     },
     "values": {
      "v": [
-      1.0,
+      2.0,
       10.0,
       1.5
      ],
@@ -712,7 +2194,7 @@
      "s": [
       "chain-fire",
       "",
-      "true"
+      ""
      ]
     },
     "aoe": {
@@ -734,85 +2216,6 @@
     "rot": [
      "images/towers_blender/TA302/TA302_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL401-",
-   "id": "TAL401",
-   "type": "aimless",
-   "upgrades": [
-    "TAL501",
-    "TAL502"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.17499999701976776,
-   "range": 3.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "lazer",
-    "buffer": 3,
-    "size": [
-     5,
-     1
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      17.5,
-      15.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL401/TAL401_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL401/TAL401_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL401/TAL401_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {
@@ -3619,164 +5022,6 @@
    }
   },
   {
-   "name": "TAL204-.002",
-   "id": "TAL204",
-   "type": "aimless",
-   "upgrades": [
-    "TAL303",
-    "TAL304"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.6000000238418579,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet_01",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "path",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      20.0,
-      12.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL204/TAL204_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL204/TAL204_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL204/TAL204_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
-   "name": "TAL304-",
-   "id": "TAL304",
-   "type": "aimless",
-   "upgrades": [
-    "TAL403",
-    "TAL404"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.6499999761581421,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet_01",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      35.0,
-      15.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL304/TAL304_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL304/TAL304_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL304/TAL304_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA304-.003",
    "id": "TA304",
    "type": "aim",
@@ -3855,85 +5100,6 @@
     "rot": [
      "images/towers_blender/TA304/TA304_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL404-",
-   "id": "TAL404",
-   "type": "aimless",
-   "upgrades": [
-    "TAL503",
-    "TAL504"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.699999988079071,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet_01",
-    "buffer": 1,
-    "size": [
-     6,
-     6
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      55.0,
-      17.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL404/TAL404_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL404/TAL404_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL404/TAL404_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {
@@ -4018,85 +5184,6 @@
    }
   },
   {
-   "name": "TAL504-",
-   "id": "TAL504",
-   "type": "aimless",
-   "upgrades": [
-    "TAL603",
-    "TAL604"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.800000011920929,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet_01",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      70.0,
-      18.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL504/TAL504_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL504/TAL504_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL504/TAL504_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA504-",
    "id": "TA504",
    "type": "aim",
@@ -4175,84 +5262,6 @@
     "rot": [
      "images/towers_blender/TA504/TA504_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL604-",
-   "id": "TAL604",
-   "type": "aimless",
-   "upgrades": [
-    ""
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 1.0,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet_01",
-    "buffer": 1,
-    "size": [
-     8,
-     8
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      100.0,
-      20.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL604/TAL604_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL604/TAL604_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL604/TAL604_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {
@@ -4498,166 +5507,6 @@
    }
   },
   {
-   "name": "TAL202-.002",
-   "id": "TAL202",
-   "type": "aimless",
-   "upgrades": [
-    "TAL301",
-    "TAL302",
-    "TAL303"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "burn",
-    "buffer": 1,
-    "size": [
-     25,
-     25
-    ],
-    "type": "area-spawn-long",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      0.800000011920929,
-      0.0,
-      1.0
-     ],
-     "w": [
-      2.5,
-      0.20000000298023224,
-      0.0
-     ],
-     "z": [
-      0.0,
-      20.0,
-      0.0
-     ],
-     "a": [
-      "DOT",
-      "rotation",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL202/TAL202_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL202/TAL202_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL202/TAL202_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
-   "name": "TAL402-",
-   "id": "TAL402",
-   "type": "aimless",
-   "upgrades": [
-    "TAL501",
-    "TAL502",
-    "TAL503"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "burn",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "area-spawn-long",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-fire",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL402/TAL402_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL402/TAL402_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL402/TAL402_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA402-.003",
    "id": "TA402",
    "type": "aim",
@@ -4737,86 +5586,6 @@
     "rot": [
      "images/towers_blender/TA402/TA402_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL502-",
-   "id": "TAL502",
-   "type": "aimless",
-   "upgrades": [
-    "TAL601",
-    "TAL602",
-    "TAL603"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "burn",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "area-spawn-long",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-fire",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL502/TAL502_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL502/TAL502_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL502/TAL502_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {
@@ -4902,84 +5671,6 @@
    }
   },
   {
-   "name": "TAL602-",
-   "id": "TAL602",
-   "type": "aimless",
-   "upgrades": [
-    ""
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "burn",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "area-spawn-long",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-fire",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL602/TAL602_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL602/TAL602_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL602/TAL602_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA602-.003",
    "id": "TA602",
    "type": "aim",
@@ -5057,166 +5748,6 @@
     "rot": [
      "images/towers_blender/TA602/TA602_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL203-.002",
-   "id": "TAL203",
-   "type": "aimless",
-   "upgrades": [
-    "TAL302",
-    "TAL303",
-    "TAL304"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.25,
-   "range": 4.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "chain-01",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "chain",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      0.20000000298023224,
-      10.0,
-      2.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-electro-1",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL203/TAL203_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL203/TAL203_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL203/TAL203_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
-   "name": "TAL303-",
-   "id": "TAL303",
-   "type": "aimless",
-   "upgrades": [
-    "TAL402",
-    "TAL403",
-    "TAL404"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.25,
-   "range": 4.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "rocket",
-    "buffer": 2,
-    "size": [
-     10,
-     2
-    ],
-    "type": "follow",
-    "hiteffect": {
-     "vis": "animation",
-     "type": "damage",
-     "animation": {
-      "img": "short-expl-03",
-      "size": [
-       25.0,
-       25.0
-      ],
-      "fps": 9.0
-     }
-    },
-    "values": {
-     "v": [
-      100.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL303/TAL303_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL303/TAL303_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL303/TAL303_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {
@@ -5302,86 +5833,6 @@
    }
   },
   {
-   "name": "TAL403-",
-   "id": "TAL403",
-   "type": "aimless",
-   "upgrades": [
-    "TAL502",
-    "TAL503",
-    "TAL504"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 1.399999976158142,
-   "range": 4.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "burn",
-    "buffer": 2,
-    "size": [
-     8,
-     8
-    ],
-    "type": "follow",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       25.0,
-       25.0
-      ],
-      "fps": 9.0
-     }
-    },
-    "values": {
-     "v": [
-      1.2000000476837158,
-      4.0,
-      0.0
-     ],
-     "w": [
-      2.0,
-      0.4000000059604645,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "DOT",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL403/TAL403_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL403/TAL403_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL403/TAL403_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA403-.003",
    "id": "TA403",
    "type": "aim",
@@ -5464,86 +5915,6 @@
    }
   },
   {
-   "name": "TAL503-",
-   "id": "TAL503",
-   "type": "aimless",
-   "upgrades": [
-    "TAL602",
-    "TAL603",
-    "TAL604"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.25,
-   "range": 4.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "",
-    "buffer": 1,
-    "size": [
-     5,
-     1
-    ],
-    "type": "chain",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      2.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-electro-1",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL503/TAL503_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL503/TAL503_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL503/TAL503_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA503-.003",
    "id": "TA503",
    "type": "aim",
@@ -5623,84 +5994,6 @@
     "rot": [
      "images/towers_blender/TA503/TA503_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL603-",
-   "id": "TAL603",
-   "type": "aimless",
-   "upgrades": [
-    ""
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.25,
-   "range": 4.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "",
-    "buffer": 1,
-    "size": [
-     5,
-     1
-    ],
-    "type": "chain",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      2.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-electro-1",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL603/TAL603_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL603/TAL603_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL603/TAL603_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {
@@ -6027,29 +6320,28 @@
    }
   },
   {
-   "name": "TAL201-.002",
-   "id": "TAL201",
+   "name": "Aimless lazer I.001",
+   "id": "TAL204",
    "type": "aimless",
    "upgrades": [
-    "TAL301",
-    "TAL302"
+    "TAL304"
    ],
    "rotate_speed": 0.0,
-   "reload_time": 0.25,
+   "reload_time": 0.5,
    "range": 2.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "lazer",
-    "buffer": 3,
+    "img": "",
+    "buffer": 1,
     "size": [
      3,
      1
     ],
-    "type": "normal",
+    "type": "lazer",
     "hiteffect": {
      "vis": "none",
-     "type": "damage",
+     "type": "damage-over-time",
      "animation": {
       "img": "",
       "size": [
@@ -6061,9 +6353,9 @@
     },
     "values": {
      "v": [
-      7.5,
-      15.0,
-      0.0
+      0.5,
+      0.0,
+      0.5
      ],
      "w": [
       0.0,
@@ -6081,86 +6373,7 @@
       ""
      ],
      "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL201/TAL201_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL201/TAL201_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL201/TAL201_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
-   "name": "TAL301-",
-   "id": "TAL301",
-   "type": "aimless",
-   "upgrades": [
-    "TAL401",
-    "TAL402"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.20000000298023224,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "lazer",
-    "buffer": 3,
-    "size": [
-     4,
-     1
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      12.5,
-      12.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
+      "chain-electro-1",
       "",
       ""
      ]
@@ -6173,13 +6386,13 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TAL301/TAL301_f.png"
+     "images/towers_blender/TAL204/TAL204_f.png"
     ],
     "icon": [
-     "images/towers_blender/TAL301/TAL301_icon_256x256.png"
+     "images/towers_blender/TAL204/TAL204_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TAL301/TAL301_icon_512x512p.png"
+     "images/towers_blender/TAL204/TAL204_icon_512x512p.png"
     ],
     "rot": []
    }
@@ -6266,85 +6479,6 @@
    }
   },
   {
-   "name": "TAL501-",
-   "id": "TAL501",
-   "type": "aimless",
-   "upgrades": [
-    "TAL601",
-    "TAL602"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.1599999964237213,
-   "range": 3.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "lazer",
-    "buffer": 3,
-    "size": [
-     5,
-     1
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      20.0,
-      20.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL501/TAL501_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL501/TAL501_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL501/TAL501_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA501-.003",
    "id": "TA501",
    "type": "aim",
@@ -6426,84 +6560,6 @@
    }
   },
   {
-   "name": "TAL601-",
-   "id": "TAL601",
-   "type": "aimless",
-   "upgrades": [
-    ""
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.10000000149011612,
-   "range": 4.0,
-   "ndir": 1,
-   "price": 100.0,
-   "bullet": {
-    "img": "lazer",
-    "buffer": 5,
-    "size": [
-     8,
-     2
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      25.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL601/TAL601_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL601/TAL601_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL601/TAL601_icon_512x512p.png"
-    ],
-    "rot": []
-   }
-  },
-  {
    "name": "TA601-.003",
    "id": "TA601",
    "type": "aim",
@@ -6581,86 +6637,6 @@
     "rot": [
      "images/towers_blender/TA601/TA601_r.png"
     ]
-   }
-  },
-  {
-   "name": "TAL302-.002",
-   "id": "TAL302",
-   "type": "aimless",
-   "upgrades": [
-    "TAL401",
-    "TAL402",
-    "TAL403"
-   ],
-   "rotate_speed": 0.0,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "burn",
-    "buffer": 1,
-    "size": [
-     10,
-     10
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      2.0,
-      5.0,
-      0.0
-     ],
-     "w": [
-      2.5,
-      0.20000000298023224,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "DOT",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TAL302/TAL302_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TAL302/TAL302_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TAL302/TAL302_icon_512x512p.png"
-    ],
-    "rot": []
    }
   },
   {

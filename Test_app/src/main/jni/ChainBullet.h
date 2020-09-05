@@ -7,8 +7,8 @@ static const float CHAIN_SPRITE_WIDTH		= 4.0f;
 
 class ChainElement;
 
-class ChainBullet : public Bullet, public TargetedBullet {
-
+class ChainBullet : public Bullet, public TargetedBullet, public MultiTargetBullet 
+{
 public:
 	ChainBullet(AgkImage* img, const glm::vec2& pos, 
 		float _range, float _timer_max, int _maxChildren, int _nestingLimit, float _expandTime,
@@ -24,9 +24,7 @@ public:
 	void removeTarget(Mob* m);
 	void addTarget(Mob* m);
 
-	std::set<Mob*>* getCurrentTargets();
-	std::set<Mob*>* getNewTargets();
-	std::set<Mob*>* getReleasedTargets();
+
 
 	void dump();
 
@@ -35,9 +33,7 @@ public:
 protected:
 	ChainElement*			baseElement = nullptr;
 	std::set<ChainElement*> elements;
-	std::set<Mob*>			allTargets;
-	std::set<Mob*>			newTargets;
-	std::set<Mob*>			releasedTargets;
+
 	bool _isLazer = false;
 	//std::vector<Cell*>*		cellsInRange;	
 	//CellRange*				cellRange;

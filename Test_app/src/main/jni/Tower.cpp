@@ -135,7 +135,6 @@ void Tower::deleteBulletSprites() {
 	activeBullets.clear();
 }
 
-static std::vector<Cell*> tmpcells;
 void Tower::update(Map* map) {
 	updateDebugTextSprites();
 
@@ -151,12 +150,7 @@ void Tower::update(Map* map) {
 	if (isLoaded && canShoot()) {
 		shoot();
 
-		/*for (Cell* ctmp : tmpcells)
-			ctmp->setColor(colours::white);
-		tmpcells.clear();
-		map->getRoadCellsAlongLine(getPosition(), currentTarget->getPos(), tmpcells);
-		for (Cell* ctmp : tmpcells)
-			ctmp->setColor(colours::red);*/
+
 	}
 		
 
@@ -295,24 +289,24 @@ void Tower::processTowerMobInteration(Map* map)
 
 void Tower::checkMobBulletCollisions(Map* map) {
 
-	if (towerDescriptor->bulletStats.type == bullet_type::chain)
+	if (towerDescriptor->bulletStats.type == bullet_type::chain || towerDescriptor->bulletStats.type == bullet_type::lazer)
 	{
 		for (Bullet* blt = firstBullet(); blt; blt = nextBullet()) {
 			
 			if(towerDescriptor->bulletStats.effectType == bullet_hit_effect_type::debuff){
-				std::set<Mob*>* newTargets = ((ChainBullet*)blt)->getNewTargets();
+				std::set<Mob*>* newTargets = ((MultiTargetBullet*)blt)->getNewTargets();
 				for (Mob* m : (*newTargets)) onBulletHitMob(map, m, blt, towerDescriptor->bulletStats.aoeStats.hasAoe);
 				if(towerDescriptor->bulletStats.data.releaseDebuffOnChainEnd()){
-					std::set<Mob*>* relTargets = ((ChainBullet*)blt)->getReleasedTargets();
+					std::set<Mob*>* relTargets = dynamic_cast<MultiTargetBullet*>(blt)->getReleasedTargets();
 					for (Mob* m : (*relTargets)) onBulletUnhitMob(m, blt);
 				}
 			}
 			else if (towerDescriptor->bulletStats.effectType == bullet_hit_effect_type::damage_over_time) {
-				std::set<Mob*>* curTargets = ((ChainBullet*)blt)->getCurrentTargets();
+				std::set<Mob*>* curTargets = dynamic_cast<MultiTargetBullet*>(blt)->getCurrentTargets();
 				for (Mob* m : (*curTargets)) onBulletHitMob(map, m, blt, towerDescriptor->bulletStats.aoeStats.hasAoe);
 			}
 			else if (towerDescriptor->bulletStats.effectType == bullet_hit_effect_type::damage) {
-				std::set<Mob*>* curTargets = ((ChainBullet*)blt)->getNewTargets();
+				std::set<Mob*>* curTargets = dynamic_cast<MultiTargetBullet*>(blt)->getNewTargets();
 				for (Mob* m : (*curTargets)) onBulletHitMob(map, m, blt, towerDescriptor->bulletStats.aoeStats.hasAoe);
 			}
 		}		
@@ -373,7 +367,8 @@ void Tower::onBulletHitMobAoe(Map* map, Mob* mob, Bullet* b) {
 
 void Tower::onBulletHitMob(Map* map, Mob* mob, Bullet* b, bool aoe, float reduction) {
 	
-	if (aoe) onBulletHitMobAoe(map, mob, b);		
+	if (aoe)
+		onBulletHitMobAoe(map, mob, b);		
 	
 	float takenDmg = 0.0f;
 	
