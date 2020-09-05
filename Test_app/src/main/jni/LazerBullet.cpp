@@ -26,6 +26,7 @@ void LazerBullet::updateOrientation() {
 bool LazerBullet::isDone(){
 	if (!targetMob || (targetMob && targetMob->isDead()))
 		return true;
+	//if out of range
 	return timer > timer_max;
 }
 void LazerBullet::reset(){
