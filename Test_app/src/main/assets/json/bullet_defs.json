@@ -1,0 +1,54 @@
+{
+    "bullets": [
+        {
+            "id": 1, 
+            "name": "stone", 
+            "path": "images\\bullets\\stone\\stone_16x16.png"
+        }, 
+        {
+            "id": 2, 
+            "name": "lazer", 
+            "path": "images\\bullets\\lazer\\lazer_2x16.png"
+        }, 
+        {
+            "id": 3, 
+            "name": "bullet_01", 
+            "path": "images\\bullets\\bullet_01\\bullet_01_16x16.png"
+        }, 
+        {
+            "id": 4, 
+            "name": "bullet_02", 
+            "path": "images\\bullets\\bullet_02\\bullet_02_16x16.png"
+        }, 
+        {
+            "id": 5, 
+            "name": "bullet_03", 
+            "path": "images\\bullets\\bullet_03\\bullet_03_16x16.png"
+        }, 
+        {
+            "id": 6, 
+            "name": "rocket", 
+            "path": "images\\bullets\\rocket\\rocket_01.png"
+        }, 
+        {
+            "id": 7, 
+            "name": "freeze", 
+            "path": "images\\bullets\\freeze\\freeze-01.png"
+        }, 
+        {
+            "id": 8, 
+            "name": "burn", 
+            "path": "images\\bullets\\burn\\burn.png"
+        }, 
+        {
+            "id": 9, 
+            "name": "chain-01", 
+            "path": "images\\bullets\\chains\\chain-01.png"
+        }, 
+        {
+            "id": 10, 
+            "name": "blue-circle", 
+            "path": "images\\bullets\\aoe\\blue-transparent-circle.png"
+        }
+    ]
+}

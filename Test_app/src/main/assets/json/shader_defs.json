@@ -1,0 +1,20 @@
+{
+    "shaders": [
+        {
+            "id": "chain-fire", 
+            "path": "shaders\\chain-fire.fs"
+        }, 
+        {
+            "id": "chain-ice", 
+            "path": "shaders\\chain-ice.fs"
+        }, 
+        {
+            "id": "chain-electro-1", 
+            "path": "shaders\\chain-electro-1.fs"
+        }, 
+        {
+            "id": "chain-electro-2", 
+            "path": "shaders\\chain-electro-2.fs"
+        }
+    ]
+}

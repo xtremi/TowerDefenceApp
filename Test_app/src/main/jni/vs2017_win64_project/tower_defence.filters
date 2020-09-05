@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AgkImage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ball.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BallGroup.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bumpers.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Collectable.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Collectables.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameAssets.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GamePlay.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\global.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MediaBank.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MenuUI.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PhysicsSprite.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sprite.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\template.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UIButton.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UIPage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LevelCompleteUI.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LevelDataControl.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LevelDataBumpers.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LevelDataBalls.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LevelDataCollectables.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{081f9ee8-6e9f-478d-96ff-8cd1d5fb57fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{f0cc05b5-a81a-4821-a625-be9cc6d1ac9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AgkFont.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AgkImage.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ball.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BallGroup.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bumpers.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Collectable.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Collectables.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameAssets.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlay.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\global.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MediaBank.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MenuUI.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PhysicsSprite.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sprite.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\template.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UIButton.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UIPage.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LevelCompleteUI.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LevelDataControl.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LevelDataBumpers.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LevelDataBalls.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LevelDataCollectables.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

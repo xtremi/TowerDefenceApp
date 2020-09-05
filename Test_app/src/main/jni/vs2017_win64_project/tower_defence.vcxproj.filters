@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{5317ef66-ff00-4f3d-b050-482aed025980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{0643cf14-13c7-46d0-80fd-b21f7e0af925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGK_UI_RELA">
+      <UniqueIdentifier>{ff6c4e49-9095-471a-b313-a00711f34dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\JSON">
+      <UniqueIdentifier>{9014f340-f6f3-4a87-9718-9f799ff4a6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\JSON">
+      <UniqueIdentifier>{7dd05cd5-3bf0-4626-b733-3055b494a2d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Descriptors">
+      <UniqueIdentifier>{8e0ea2a0-6682-4871-bd35-4542ee89ef89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Perlin">
+      <UniqueIdentifier>{0a3f7e06-5b98-401c-aa95-bb4c76cd36ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Bullets">
+      <UniqueIdentifier>{f94961db-fdaa-4a6d-8674-7f85b81c50ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bullet">
+      <UniqueIdentifier>{3ede439b-8df0-4407-8b0c-fb4274a009d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Towers">
+      <UniqueIdentifier>{3e49b77f-cf58-46dd-97fe-8a93f5b86b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Towers">
+      <UniqueIdentifier>{1453e32e-728d-4642-8384-b721142ef7c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlay.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\global.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MediaBank.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MenuUI.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\template.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Map.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MobController.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GameHUD.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CellSelectionMenu.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerDirectionMenu.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mob.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Cell.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Building.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BuildingController.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OnScreenLogger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InfoFrame.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InfoFrameList.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\JSONReader.h">
+      <Filter>Headers\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MobJSONReader.h">
+      <Filter>Headers\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerJSONReader.h">
+      <Filter>Headers\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WaveJSONReader.h">
+      <Filter>Headers\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MobDescriptor.h">
+      <Filter>Headers\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerDescriptor.h">
+      <Filter>Headers\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WaveDescriptor.h">
+      <Filter>Headers\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WaveController.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PerlinNoise.h">
+      <Filter>Headers\Perlin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AnimationController.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AnimationJSONReader.h">
+      <Filter>Headers\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlay_testingFunctions.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NextWaveButton.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\colours.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WaveHUDframe.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PlayerStatsHUDframe.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MobEffect.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MobEffectController.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AreaSpawnBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChainBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CircleBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FollowBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChainElement.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MediaJSONReader.h">
+      <Filter>Headers\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tower.h">
+      <Filter>Headers\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerAim.h">
+      <Filter>Headers\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerAimless.h">
+      <Filter>Headers\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerBlock.h">
+      <Filter>Headers\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExpandBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerAOE.h">
+      <Filter>Headers\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AreaSpawnBulletTypes.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TowerMultiDir.h">
+      <Filter>Headers\Towers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PathBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LazerBullet.h">
+      <Filter>Headers\Bullets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GamePlay.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\global.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MediaBank.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\template.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Map.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MobController.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameHUD.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MenuUI.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AgkImage.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AgkSprite.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AnimatedSprite.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AnimatedSpriteAndText.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AnimatedTextSprite.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\Sprite.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\SpriteAndText.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\SpriteAnimation.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\TextSprite.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\UIButton.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\UIButtonTypes.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\UIFrame.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerDirectionMenu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CellSelectionMenu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Cell.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mob.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BuildingController.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Building.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnScreenLogger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\InfoFrame.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\InfoFrameList.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\NumberTextSprite.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerJSONReader.cpp">
+      <Filter>Source\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\JSONReader.cpp">
+      <Filter>Source\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WaveJSONReader.cpp">
+      <Filter>Source\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MobJSONReader.cpp">
+      <Filter>Source\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WaveController.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AnimationJSONReader.cpp">
+      <Filter>Source\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\ViewController\ViewController.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NextWaveButton.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\colours.cpp">
+      <Filter>AGK_UI_RELA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WaveHUDframe.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PlayerStatsHUDframe.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MobEffect.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MobEffectController.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AreaSpawnBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChainBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CircleBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FollowBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChainElement.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MediaJSONReader.cpp">
+      <Filter>Source\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tower.cpp">
+      <Filter>Source\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerAim.cpp">
+      <Filter>Source\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerAimless.cpp">
+      <Filter>Source\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerBlock.cpp">
+      <Filter>Source\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerMultiDir.cpp">
+      <Filter>Source\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExpandBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerAOE.cpp">
+      <Filter>Source\Towers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PathBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LazerBullet.cpp">
+      <Filter>Source\Bullet</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

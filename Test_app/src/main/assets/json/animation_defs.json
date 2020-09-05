@@ -1,0 +1,156 @@
+{
+    "animations": [
+        {
+            "id": "red-explode", 
+            "type": "multi", 
+            "prefix": "images\\animations\\red-explode\\redexplode", 
+            "start_n-w": 4, 
+            "end_n-h": 36, 
+            "n_padded_0-count": 4
+        }, 
+        {
+            "id": "white-explode", 
+            "type": "multi", 
+            "prefix": "images\\animations\\white-explode\\explodewhite", 
+            "start_n-w": 3, 
+            "end_n-h": 46, 
+            "n_padded_0-count": 4
+        }, 
+        {
+            "id": "blue-flash", 
+            "type": "multi", 
+            "prefix": "images\\animations\\blue-flash\\DebrisExplode", 
+            "start_n-w": 6, 
+            "end_n-h": 50, 
+            "n_padded_0-count": 4
+        }, 
+        {
+            "id": "dynamite", 
+            "type": "multi", 
+            "prefix": "images\\animations\\dynamite\\dynoexplode", 
+            "start_n-w": 2, 
+            "end_n-h": 50, 
+            "n_padded_0-count": 4
+        }, 
+        {
+            "id": "short-expl-01", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-1\\explosion-1-", 
+            "start_n-w": 1, 
+            "end_n-h": 6, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-02", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-2\\explosion-2-", 
+            "start_n-w": 1, 
+            "end_n-h": 6, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-03", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-3\\", 
+            "start_n-w": 1, 
+            "end_n-h": 8, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-04", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-4\\", 
+            "start_n-w": 1, 
+            "end_n-h": 6, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-05", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-5\\explosion-5-", 
+            "start_n-w": 1, 
+            "end_n-h": 10, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-06", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-6\\explosion-6-", 
+            "start_n-w": 1, 
+            "end_n-h": 10, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-07", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-7\\", 
+            "start_n-w": 1, 
+            "end_n-h": 9, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-08", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-8\\", 
+            "start_n-w": 1, 
+            "end_n-h": 9, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "short-expl-09", 
+            "type": "multi", 
+            "prefix": "images\\animations\\short\\explosion-9\\", 
+            "start_n-w": 1, 
+            "end_n-h": 9, 
+            "n_padded_0-count": 2
+        }, 
+        {
+            "id": "fire-01", 
+            "type": "single", 
+            "prefix": "images\\animations\\fire-01.png", 
+            "start_n-w": 50, 
+            "end_n-h": 92, 
+            "n_padded_0-count": 8
+        }, 
+        {
+            "id": "fire-debuff", 
+            "type": "single", 
+            "prefix": "images\\animations\\fire-debuff.png", 
+            "start_n-w": 50, 
+            "end_n-h": 50, 
+            "n_padded_0-count": 8
+        }, 
+        {
+            "id": "ice-debuff", 
+            "type": "single", 
+            "prefix": "images\\animations\\ice-debuff.png", 
+            "start_n-w": 50, 
+            "end_n-h": 50, 
+            "n_padded_0-count": 8
+        }, 
+        {
+            "id": "blue-explode", 
+            "type": "single", 
+            "prefix": "images\\animations\\blue-explode.png", 
+            "start_n-w": 48, 
+            "end_n-h": 48, 
+            "n_padded_0-count": 8
+        }, 
+        {
+            "id": "green-explode", 
+            "type": "single", 
+            "prefix": "images\\animations\\green-explode.png", 
+            "start_n-w": 256, 
+            "end_n-h": 256, 
+            "n_padded_0-count": 25
+        }, 
+        {
+            "id": "electro-01", 
+            "type": "single", 
+            "prefix": "images\\animations\\electro-01.png", 
+            "start_n-w": 128, 
+            "end_n-h": 128, 
+            "n_padded_0-count": 30
+        }
+    ]
+}

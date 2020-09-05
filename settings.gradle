@@ -1,0 +1,2 @@
+include ':FacebookSDK'
+include ':Test_app'

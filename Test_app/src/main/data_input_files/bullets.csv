@@ -1,0 +1,11 @@
+id,name,path
+1,stone,images\bullets\stone\stone_16x16.png
+2,lazer,images\bullets\lazer\lazer_2x16.png
+3,bullet_01,images\bullets\bullet_01\bullet_01_16x16.png
+4,bullet_02,images\bullets\bullet_02\bullet_02_16x16.png
+5,bullet_03,images\bullets\bullet_03\bullet_03_16x16.png
+6,rocket,images\bullets\rocket\rocket_01.png
+7,freeze,images\bullets\freeze\freeze-01.png
+8,burn,images\bullets\burn\burn.png
+9,chain-01,images\bullets\chains\chain-01.png
+10,blue-circle,images\bullets\aoe\blue-transparent-circle.png

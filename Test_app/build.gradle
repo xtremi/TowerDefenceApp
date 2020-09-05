@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    sourceSets.main.jni.srcDirs = []
+
+    defaultConfig {
+        applicationId "com.mycompany.mytemplate"
+        minSdkVersion 16
+        targetSdkVersion 29
+        ndk{
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4096M"
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-ads:18.1.1'
+    implementation 'com.google.android.gms:play-services-games:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.0.1'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs/chartboost.jar')
+    implementation files('libs/amazon-ads-5.9.0.jar')
+    implementation 'com.google.ar:core:1.10.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.7'
+    implementation 'com.google.firebase:firebase-messaging:19.0.1'
+    implementation 'com.google.api-client:google-api-client:1.25.0'
+    implementation 'com.google.api-client:google-api-client-android:1.23.0'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+    implementation files('libs/YouTubeAndroidPlayerAPI.jar')
+    implementation([
+            'com.snapchat.kit.sdk:creative:1.3.2',
+            'com.snapchat.kit.sdk:core:1.3.2',
+    ])
+}

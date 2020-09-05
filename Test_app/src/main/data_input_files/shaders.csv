@@ -1,0 +1,5 @@
+id,path
+chain-fire,shaders\chain-fire.fs
+chain-ice,shaders\chain-ice.fs
+chain-electro-1,shaders\chain-electro-1.fs
+chain-electro-2,shaders\chain-electro-2.fs

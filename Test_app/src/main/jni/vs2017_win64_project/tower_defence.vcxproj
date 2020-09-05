@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AnimationController.h" />
+    <ClInclude Include="..\AnimationJSONReader.h" />
+    <ClInclude Include="..\AreaSpawnBullet.h" />
+    <ClInclude Include="..\AreaSpawnBulletTypes.h" />
+    <ClInclude Include="..\Building.h" />
+    <ClInclude Include="..\BuildingController.h" />
+    <ClInclude Include="..\Bullet.h" />
+    <ClInclude Include="..\Cell.h" />
+    <ClInclude Include="..\CellSelectionMenu.h" />
+    <ClInclude Include="..\ChainBullet.h" />
+    <ClInclude Include="..\ChainElement.h" />
+    <ClInclude Include="..\CircleBullet.h" />
+    <ClInclude Include="..\colours.h" />
+    <ClInclude Include="..\ExpandBullet.h" />
+    <ClInclude Include="..\FollowBullet.h" />
+    <ClInclude Include="..\GameHUD.h" />
+    <ClInclude Include="..\GamePlay.h" />
+    <ClInclude Include="..\GamePlay_testingFunctions.h" />
+    <ClInclude Include="..\global.h" />
+    <ClInclude Include="..\InfoFrame.h" />
+    <ClInclude Include="..\InfoFrameList.h" />
+    <ClInclude Include="..\JSONReader.h" />
+    <ClInclude Include="..\LazerBullet.h" />
+    <ClInclude Include="..\logger.h" />
+    <ClInclude Include="..\Map.h" />
+    <ClInclude Include="..\MediaBank.h" />
+    <ClInclude Include="..\MediaJSONReader.h" />
+    <ClInclude Include="..\MenuUI.h" />
+    <ClInclude Include="..\Mob.h" />
+    <ClInclude Include="..\MobController.h" />
+    <ClInclude Include="..\MobDescriptor.h" />
+    <ClInclude Include="..\MobEffect.h" />
+    <ClInclude Include="..\MobEffectController.h" />
+    <ClInclude Include="..\MobJSONReader.h" />
+    <ClInclude Include="..\NextWaveButton.h" />
+    <ClInclude Include="..\OnScreenLogger.h" />
+    <ClInclude Include="..\PathBullet.h" />
+    <ClInclude Include="..\PerlinNoise.h" />
+    <ClInclude Include="..\PlayerStatsHUDframe.h" />
+    <ClInclude Include="..\template.h" />
+    <ClInclude Include="..\Tower.h" />
+    <ClInclude Include="..\TowerAim.h" />
+    <ClInclude Include="..\TowerAimless.h" />
+    <ClInclude Include="..\TowerAOE.h" />
+    <ClInclude Include="..\TowerBlock.h" />
+    <ClInclude Include="..\TowerMultiDir.h" />
+    <ClInclude Include="..\TowerDescriptor.h" />
+    <ClInclude Include="..\TowerDirectionMenu.h" />
+    <ClInclude Include="..\TowerJSONReader.h" />
+    <ClInclude Include="..\Wave.h" />
+    <ClInclude Include="..\WaveController.h" />
+    <ClInclude Include="..\WaveDescriptor.h" />
+    <ClInclude Include="..\WaveHUDframe.h" />
+    <ClInclude Include="..\WaveJSONReader.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AgkImage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AgkSprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AnimatedSprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AnimatedSpriteAndText.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\AnimatedTextSprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\NumberTextSprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\Sprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\SpriteAndText.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\SpriteAnimation.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\TextSprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\UIButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\UIButtonTypes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\UI\UIFrame.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\AGK_RELA\ViewController\ViewController.cpp" />
+    <ClCompile Include="..\AnimationJSONReader.cpp" />
+    <ClCompile Include="..\AreaSpawnBullet.cpp" />
+    <ClCompile Include="..\Building.cpp" />
+    <ClCompile Include="..\BuildingController.cpp" />
+    <ClCompile Include="..\Bullet.cpp" />
+    <ClCompile Include="..\Cell.cpp" />
+    <ClCompile Include="..\CellSelectionMenu.cpp" />
+    <ClCompile Include="..\ChainBullet.cpp" />
+    <ClCompile Include="..\ChainElement.cpp" />
+    <ClCompile Include="..\CircleBullet.cpp" />
+    <ClCompile Include="..\colours.cpp" />
+    <ClCompile Include="..\ExpandBullet.cpp" />
+    <ClCompile Include="..\FollowBullet.cpp" />
+    <ClCompile Include="..\GameHUD.cpp" />
+    <ClCompile Include="..\GamePlay.cpp" />
+    <ClCompile Include="..\global.cpp" />
+    <ClCompile Include="..\InfoFrame.cpp" />
+    <ClCompile Include="..\InfoFrameList.cpp" />
+    <ClCompile Include="..\JSONReader.cpp" />
+    <ClCompile Include="..\LazerBullet.cpp" />
+    <ClCompile Include="..\logger.cpp" />
+    <ClCompile Include="..\Map.cpp" />
+    <ClCompile Include="..\MediaBank.cpp" />
+    <ClCompile Include="..\MediaJSONReader.cpp" />
+    <ClCompile Include="..\MenuUI.cpp" />
+    <ClCompile Include="..\Mob.cpp" />
+    <ClCompile Include="..\MobController.cpp" />
+    <ClCompile Include="..\MobEffect.cpp" />
+    <ClCompile Include="..\MobEffectController.cpp" />
+    <ClCompile Include="..\MobJSONReader.cpp" />
+    <ClCompile Include="..\NextWaveButton.cpp" />
+    <ClCompile Include="..\OnScreenLogger.cpp" />
+    <ClCompile Include="..\PathBullet.cpp" />
+    <ClCompile Include="..\PlayerStatsHUDframe.cpp" />
+    <ClCompile Include="..\template.cpp" />
+    <ClCompile Include="..\Tower.cpp" />
+    <ClCompile Include="..\TowerAim.cpp" />
+    <ClCompile Include="..\TowerAimless.cpp" />
+    <ClCompile Include="..\TowerAOE.cpp" />
+    <ClCompile Include="..\TowerBlock.cpp" />
+    <ClCompile Include="..\TowerMultiDir.cpp" />
+    <ClCompile Include="..\TowerDirectionMenu.cpp" />
+    <ClCompile Include="..\TowerJSONReader.cpp" />
+    <ClCompile Include="..\WaveController.cpp" />
+    <ClCompile Include="..\WaveHUDframe.cpp" />
+    <ClCompile Include="..\WaveJSONReader.cpp" />
+    <ClCompile Include="Core.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{147BF424-49C6-4C6D-A6F1-A38D1A0850DA}</ProjectGuid>
+    <RootNamespace>SmackIt</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSdk_71A_LibraryPath_x64);</LibraryPath>
+    <OutDir>..\..\</OutDir>
+    <IntDir>$(Configuration)64\</IntDir>
+    <TargetName>$(ProjectName)64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\</OutDir>
+    <IntDir>$(Configuration)64\</IntDir>
+    <TargetName>$(ProjectName)64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(AGK_COMMON)\Include;$(AGK_COMMON)\..\renderer;$(AGK_COMMON)\..\bullet;$(AGK_COMMON)\..\bullet\BulletCollision\CollisionShapes;..\;$(AGK_RELA);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AGK_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN_64_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AGKWindows64.lib;OpenGL32.lib;winmm.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\$(ProjectName)64.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(AGK_COMMON)\..\platform\windows\Lib\VS2017\Debug64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>Dwmapi.dll;MFPlat.dll;MF.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(AGK_COMMON)\Include;$(AGK_COMMON)\..\renderer;$(AGK_COMMON)\..\bullet;$(AGK_COMMON)\..\bullet\BulletCollision\CollisionShapes;..\;$(AGK_RELA);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN_64_BUILD;WIN32;NDEBUG;_WINDOWS;AGK_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AGKWindows64.lib;OpenGL32.lib;Winmm.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\$(ProjectName)64_r.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(AGK_COMMON)\..\platform\windows\Lib\VS2017\Release64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>Dwmapi.dll;MFPlat.dll;MF.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
