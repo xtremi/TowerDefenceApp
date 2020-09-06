@@ -72,8 +72,9 @@ void LazerBullet::checkCollisions(Map* map) {
 //because it updates the orientation of normal bullets, this should be similar maybe...
 void LazerBullet::updateDirection(const glm::vec2& _dir) {
 	if (!lazerNotFollowingTarget && targetMob) {
-		shootLine = targetMob->getPos() - getPos();
-		direction = glm::normalize(shootLine);
+		shootLine			= targetMob->getPos() - getPos();
+		currentMobDistance  = glm::length(shootLine);
+		direction			= glm::normalize(shootLine);		
 	}
 	else
 		direction = _dir;
@@ -88,7 +89,8 @@ bool LazerBullet::isDone(){
 	if(!lazerNotFollowingTarget){
 		if (!targetMob || (targetMob && targetMob->isDead()))
 			return true;
-		//if out of range
+		if (currentMobDistance > range)
+			return true;
 	}
 	
 	return timer > timer_max;

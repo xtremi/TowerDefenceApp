@@ -178,7 +178,7 @@ bool TowerJSONReader::readTowerBulletData(TowerDescriptor* tdescr, JSONObject* o
 			tdescr->bulletStats.data.setA1((int)getMobEffectTypeFromString(sdata[1][0]));
 
 			if (tdescr->bulletStats.type == bullet_type::chain)
-				tdescr->bulletStats.data.setA2((int)getChainDebuffReleaseStateFromString(sdata[1][1]));
+				tdescr->bulletStats.data.setA2((int)getBoolFromString(sdata[1][1]));
 
 		}
 		if (tdescr->bulletStats.type == bullet_type::area_spawn_instant || tdescr->bulletStats.type == bullet_type::area_spawn_long)
@@ -273,7 +273,7 @@ bool TowerJSONReader::checkTowerImagesJSONobject(JSONObject* obj, std::string& e
 
 	return true;
 }
-bool getChainDebuffReleaseStateFromString(const std::string& typestr) {
+/*bool getChainDebuffReleaseStateFromString(const std::string& typestr) {
 	return getChainDebuffReleaseStateFromString(uString(&typestr[0]));
 }
 bool getChainDebuffReleaseStateFromString(const uString& typestr) {
@@ -282,7 +282,7 @@ bool getChainDebuffReleaseStateFromString(const uString& typestr) {
 	if (!str.CompareTo("false"))
 		return false;
 	return true;
-}
+}*/
 
 bullet_effect_vis_type getBulletEffectVisualizationFromString(const uString& typestr) {
 	if (!typestr.CompareTo("none"))

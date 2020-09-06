@@ -25,6 +25,7 @@ private:
 	bool lazerNotFollowingTarget	= false;
 	
 	glm::vec2 shootLine;
+	float currentMobDistance = 0.0f;
 	int	  shaderID	= 0;
 	float timer		= 0.0f;
 	float timer_max	= 0.0f;

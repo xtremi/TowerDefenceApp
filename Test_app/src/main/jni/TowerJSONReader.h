@@ -4,8 +4,8 @@
 #include "MediaBank.h"
 #include <map>
 
-bool					getChainDebuffReleaseStateFromString(const std::string& typestr);
-bool					getChainDebuffReleaseStateFromString(const uString& typestr);
+//bool					getChainDebuffReleaseStateFromString(const std::string& typestr);
+//bool					getChainDebuffReleaseStateFromString(const uString& typestr);
 bullet_effect_vis_type	getBulletEffectVisualizationFromString(const uString& typestr);
 bullet_hit_effect_type	getBulletHitEffectFromString(const uString& typestr);
 mob_effect_type			getMobEffectTypeFromString(const uString& typestr);

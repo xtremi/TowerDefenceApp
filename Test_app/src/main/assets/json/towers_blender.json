@@ -1652,9 +1652,7 @@
    "type": "aim",
    "upgrades": [
     "TA201",
-    "TA202",
-    "TA203",
-    "TA204"
+    "TA202"
    ],
    "rotate_speed": 2.5,
    "reload_time": 0.5,
@@ -1730,12 +1728,93 @@
    }
   },
   {
-   "name": "TA201-.002",
+   "name": "TA201-.003",
    "id": "TA201",
    "type": "aim",
    "upgrades": [
     "TA301",
-    "TA302"
+    "TA204"
+   ],
+   "rotate_speed": 2.0,
+   "reload_time": 0.800000011920929,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     4,
+     4
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-03",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 9.0
+     }
+    },
+    "values": {
+     "v": [
+      500.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 1.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA201/TA201_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA201/TA201_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA201/TA201_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA201/TA201_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA202-.003",
+   "id": "TA202",
+   "type": "aim",
+   "upgrades": [
+    "TA302",
+    "TA203"
    ],
    "rotate_speed": 2.5,
    "reload_time": 0.25,
@@ -1743,11 +1822,11 @@
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "stone",
     "buffer": 4,
     "size": [
-     5,
-     5
+     3,
+     3
     ],
     "type": "normal",
     "hiteffect": {
@@ -1797,35 +1876,33 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA201/TA201_f.png"
+     "images/towers_blender/TA202/TA202_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA201/TA201_icon_256x256.png"
+     "images/towers_blender/TA202/TA202_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA201/TA201_icon_512x512p.png"
+     "images/towers_blender/TA202/TA202_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA201/TA201_r.png"
+     "images/towers_blender/TA202/TA202_r.png"
     ]
    }
   },
   {
-   "name": "TA202-.002",
-   "id": "TA202",
+   "name": "TA203-.002",
+   "id": "TA203",
    "type": "aim",
    "upgrades": [
-    "TA301",
-    "TA302",
     "TA303"
    ],
    "rotate_speed": 2.5,
    "reload_time": 0.5,
-   "range": 5.0,
+   "range": 2.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "",
     "buffer": 1,
     "size": [
      5,
@@ -1879,26 +1956,24 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA202/TA202_f.png"
+     "images/towers_blender/TA203/TA203_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA202/TA202_icon_256x256.png"
+     "images/towers_blender/TA203/TA203_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA202/TA202_icon_512x512p.png"
+     "images/towers_blender/TA203/TA203_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA202/TA202_r.png"
+     "images/towers_blender/TA203/TA203_r.png"
     ]
    }
   },
   {
-   "name": "TA203-.002",
-   "id": "TA203",
+   "name": "TA204-.002",
+   "id": "TA204",
    "type": "aim",
    "upgrades": [
-    "TA302",
-    "TA303",
     "TA304"
    ],
    "rotate_speed": 2.5,
@@ -1907,7 +1982,7 @@
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "rocket",
     "buffer": 2,
     "size": [
      18,
@@ -1918,18 +1993,18 @@
      "vis": "animation",
      "type": "damage",
      "animation": {
-      "img": "short-expl-03",
+      "img": "short-expl-01",
       "size": [
-       25.0,
-       25.0
+       12.5,
+       12.5
       ],
       "fps": 9.0
      }
     },
     "values": {
      "v": [
-      99.27999877929688,
-      10.0,
+      100.0,
+      5.0,
       0.0
      ],
      "w": [
@@ -1955,87 +2030,6 @@
     },
     "aoe": {
      "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA203/TA203_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA203/TA203_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA203/TA203_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA203/TA203_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA204-.002",
-   "id": "TA204",
-   "type": "aim",
-   "upgrades": [
-    "TA303",
-    "TA304"
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-02",
-    "buffer": 2,
-    "size": [
-     5,
-     5
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": true,
      "radius": 2.0,
      "reduction": 0.5
     }
@@ -2056,24 +2050,23 @@
    }
   },
   {
-   "name": "TA301-.002",
-   "id": "TA301",
+   "name": "TA302-.003",
+   "id": "TA302",
    "type": "aim",
    "upgrades": [
-    "TA401",
     "TA402"
    ],
-   "rotate_speed": 2.5,
+   "rotate_speed": 3.0,
    "reload_time": 0.20000000298023224,
    "range": 2.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "stone",
     "buffer": 4,
     "size": [
-     5,
-     5
+     3,
+     3
     ],
     "type": "normal",
     "hiteffect": {
@@ -2090,7 +2083,7 @@
     },
     "values": {
      "v": [
-      12.0,
+      10.0,
       10.0,
       0.0
      ],
@@ -2123,26 +2116,24 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA301/TA301_f.png"
+     "images/towers_blender/TA302/TA302_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA301/TA301_icon_256x256.png"
+     "images/towers_blender/TA302/TA302_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA301/TA301_icon_512x512p.png"
+     "images/towers_blender/TA302/TA302_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA301/TA301_r.png"
+     "images/towers_blender/TA302/TA302_r.png"
     ]
    }
   },
   {
-   "name": "TA302-.002",
-   "id": "TA302",
+   "name": "TA303-.002",
+   "id": "TA303",
    "type": "aim",
    "upgrades": [
-    "TA401",
-    "TA402",
     "TA403"
    ],
    "rotate_speed": 2.5,
@@ -2151,7 +2142,7 @@
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "",
     "buffer": 1,
     "size": [
      5,
@@ -2174,7 +2165,7 @@
      "v": [
       2.0,
       10.0,
-      1.5
+      1.0
      ],
      "w": [
       2.0,
@@ -2205,16 +2196,176 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA302/TA302_f.png"
+     "images/towers_blender/TA303/TA303_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA302/TA302_icon_256x256.png"
+     "images/towers_blender/TA303/TA303_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA302/TA302_icon_512x512p.png"
+     "images/towers_blender/TA303/TA303_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA302/TA302_r.png"
+     "images/towers_blender/TA303/TA303_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA604-.001",
+   "id": "TA504",
+   "type": "aim",
+   "upgrades": [
+    "TA604"
+   ],
+   "rotate_speed": 2.5,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "rocket",
+    "buffer": 2,
+    "size": [
+     18,
+     5
+    ],
+    "type": "follow",
+    "hiteffect": {
+     "vis": "animation",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-01",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 9.0
+     }
+    },
+    "values": {
+     "v": [
+      300.0,
+      8.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 1.0,
+     "reduction": 0.75
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA504/TA504_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA504/TA504_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA504/TA504_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA504/TA504_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA604-.002",
+   "id": "TA604",
+   "type": "aim",
+   "upgrades": [
+    ""
+   ],
+   "rotate_speed": 2.5,
+   "reload_time": 0.5,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "rocket",
+    "buffer": 2,
+    "size": [
+     18,
+     5
+    ],
+    "type": "follow",
+    "hiteffect": {
+     "vis": "animation",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-01",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 9.0
+     }
+    },
+    "values": {
+     "v": [
+      500.0,
+      10.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 2.0,
+     "reduction": 0.800000011920929
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA604/TA604_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA604/TA604_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA604/TA604_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA604/TA604_r.png"
     ]
    }
   },
@@ -5022,11 +5173,10 @@
    }
   },
   {
-   "name": "TA304-.003",
+   "name": "TA304-",
    "id": "TA304",
    "type": "aim",
    "upgrades": [
-    "TA403",
     "TA404"
    ],
    "rotate_speed": 2.5,
@@ -5035,34 +5185,34 @@
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "rocket",
     "buffer": 2,
     "size": [
-     5,
+     18,
      5
     ],
-    "type": "normal",
+    "type": "follow",
     "hiteffect": {
-     "vis": "none",
+     "vis": "animation",
      "type": "damage",
      "animation": {
-      "img": "",
+      "img": "short-expl-01",
       "size": [
-       5,
-       5
+       12.5,
+       12.5
       ],
-      "fps": 10
+      "fps": 9.0
      }
     },
     "values": {
      "v": [
-      10.0,
+      120.0,
       10.0,
       0.0
      ],
      "w": [
       0.0,
-      0.0,
+      7.0,
       0.0
      ],
      "z": [
@@ -5103,11 +5253,10 @@
    }
   },
   {
-   "name": "TA404-.003",
+   "name": "TA404-",
    "id": "TA404",
    "type": "aim",
    "upgrades": [
-    "TA503",
     "TA504"
    ],
    "rotate_speed": 2.5,
@@ -5116,29 +5265,29 @@
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "rocket",
     "buffer": 2,
     "size": [
-     5,
+     18,
      5
     ],
-    "type": "normal",
+    "type": "follow",
     "hiteffect": {
-     "vis": "none",
+     "vis": "animation",
      "type": "damage",
      "animation": {
-      "img": "",
+      "img": "short-expl-01",
       "size": [
-       5,
-       5
+       25.0,
+       25.0
       ],
-      "fps": 10
+      "fps": 9.0
      }
     },
     "values": {
      "v": [
-      10.0,
-      10.0,
+      150.0,
+      8.0,
       0.0
      ],
      "w": [
@@ -5163,7 +5312,7 @@
      ]
     },
     "aoe": {
-     "on": false,
+     "on": true,
      "radius": 0.0,
      "reduction": 1.0
     }
@@ -5180,167 +5329,6 @@
     ],
     "rot": [
      "images/towers_blender/TA404/TA404_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA504-",
-   "id": "TA504",
-   "type": "aim",
-   "upgrades": [
-    "TA603",
-    "TA604"
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 2,
-    "size": [
-     5,
-     5
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA504/TA504_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA504/TA504_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA504/TA504_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA504/TA504_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA604-.003",
-   "id": "TA604",
-   "type": "aim",
-   "upgrades": [
-    ""
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 2,
-    "size": [
-     5,
-     5
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA604/TA604_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA604/TA604_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA604/TA604_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA604/TA604_r.png"
     ]
    }
   },
@@ -5507,12 +5495,10 @@
    }
   },
   {
-   "name": "TA402-.003",
-   "id": "TA402",
+   "name": "TA403-",
+   "id": "TA403",
    "type": "aim",
    "upgrades": [
-    "TA501",
-    "TA502",
     "TA503"
    ],
    "rotate_speed": 2.5,
@@ -5521,7 +5507,7 @@
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "",
     "buffer": 1,
     "size": [
      5,
@@ -5542,89 +5528,7 @@
     },
     "values": {
      "v": [
-      10.0,
-      10.0,
-      1.5
-     ],
-     "w": [
-      2.0,
-      0.4000000059604645,
-      0.0
-     ],
-     "z": [
-      3.0,
-      3.0,
-      0.05000000074505806
-     ],
-     "a": [
-      "DOT",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-fire",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA402/TA402_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA402/TA402_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA402/TA402_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA402/TA402_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA502-.003",
-   "id": "TA502",
-   "type": "aim",
-   "upgrades": [
-    "TA601",
-    "TA602",
-    "TA603"
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 5.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "chain",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
+      2.5,
       10.0,
       1.5
      ],
@@ -5634,88 +5538,8 @@
       0.0
      ],
      "z": [
-      4.0,
-      4.0,
-      0.05000000074505806
-     ],
-     "a": [
-      "DOT",
-      "",
-      ""
-     ],
-     "s": [
-      "chain-fire",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA502/TA502_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA502/TA502_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA502/TA502_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA502/TA502_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA602-.003",
-   "id": "TA602",
-   "type": "aim",
-   "upgrades": [
-    ""
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 5.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 1,
-    "size": [
-     5,
-     5
-    ],
-    "type": "chain",
-    "hiteffect": {
-     "vis": "none",
-     "type": "debuff",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      10.0,
-      10.0,
-      1.5
-     ],
-     "w": [
       2.0,
-      0.4000000059604645,
-      0.0
-     ],
-     "z": [
-      6.0,
-      6.0,
+      1.0,
       0.05000000074505806
      ],
      "a": [
@@ -5725,170 +5549,6 @@
      ],
      "s": [
       "chain-fire",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA602/TA602_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA602/TA602_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA602/TA602_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA602/TA602_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA303-.003",
-   "id": "TA303",
-   "type": "aim",
-   "upgrades": [
-    "TA402",
-    "TA403",
-    "TA404"
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 2,
-    "size": [
-     18,
-     5
-    ],
-    "type": "follow",
-    "hiteffect": {
-     "vis": "animation",
-     "type": "damage",
-     "animation": {
-      "img": "short-expl-03",
-      "size": [
-       25.0,
-       25.0
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      100.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA303/TA303_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA303/TA303_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA303/TA303_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA303/TA303_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA403-.003",
-   "id": "TA403",
-   "type": "aim",
-   "upgrades": [
-    "TA502",
-    "TA503",
-    "TA504"
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.5,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 2,
-    "size": [
-     18,
-     5
-    ],
-    "type": "follow",
-    "hiteffect": {
-     "vis": "animation",
-     "type": "damage",
-     "animation": {
-      "img": "short-expl-03",
-      "size": [
-       25.0,
-       25.0
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      100.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
       "",
       ""
      ]
@@ -5915,62 +5575,60 @@
    }
   },
   {
-   "name": "TA503-.003",
+   "name": "TA503-",
    "id": "TA503",
    "type": "aim",
    "upgrades": [
-    "TA602",
-    "TA603",
-    "TA604"
+    "TA603"
    ],
    "rotate_speed": 2.5,
    "reload_time": 0.5,
-   "range": 2.0,
+   "range": 5.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
-    "buffer": 2,
+    "img": "",
+    "buffer": 1,
     "size": [
-     18,
+     5,
      5
     ],
-    "type": "follow",
+    "type": "chain",
     "hiteffect": {
-     "vis": "animation",
-     "type": "damage",
+     "vis": "none",
+     "type": "debuff",
      "animation": {
-      "img": "short-expl-03",
+      "img": "",
       "size": [
-       25.0,
-       25.0
+       5,
+       5
       ],
       "fps": 10
      }
     },
     "values": {
      "v": [
-      100.0,
+      5.0,
       10.0,
-      0.0
+      1.5
      ],
      "w": [
-      0.0,
-      0.0,
+      2.0,
+      0.4000000059604645,
       0.0
      ],
      "z": [
-      0.0,
-      0.0,
-      0.0
+      2.0,
+      2.0,
+      0.05000000074505806
      ],
      "a": [
-      "",
+      "DOT",
       "",
       ""
      ],
      "s": [
-      "",
+      "chain-fire",
       "",
       ""
      ]
@@ -5997,7 +5655,7 @@
    }
   },
   {
-   "name": "TA603-.003",
+   "name": "TA603-",
    "id": "TA603",
    "type": "aim",
    "upgrades": [
@@ -6005,32 +5663,112 @@
    ],
    "rotate_speed": 2.5,
    "reload_time": 0.5,
-   "range": 2.0,
+   "range": 5.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
-    "buffer": 2,
+    "img": "",
+    "buffer": 1,
     "size": [
-     18,
+     5,
      5
     ],
-    "type": "follow",
+    "type": "chain",
     "hiteffect": {
-     "vis": "animation",
-     "type": "damage",
+     "vis": "none",
+     "type": "debuff",
      "animation": {
-      "img": "short-expl-03",
+      "img": "",
       "size": [
-       25.0,
-       25.0
+       5,
+       5
       ],
       "fps": 10
      }
     },
     "values": {
      "v": [
-      100.0,
+      5.0,
+      10.0,
+      1.5
+     ],
+     "w": [
+      2.0,
+      0.4000000059604645,
+      0.0
+     ],
+     "z": [
+      4.0,
+      4.0,
+      0.05000000074505806
+     ],
+     "a": [
+      "DOT",
+      "",
+      ""
+     ],
+     "s": [
+      "chain-fire",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 0.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA603/TA603_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA603/TA603_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA603/TA603_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA603/TA603_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA602-base",
+   "id": "TA502",
+   "type": "aim",
+   "upgrades": [
+    "TA602"
+   ],
+   "rotate_speed": 7.0,
+   "reload_time": 0.17000000178813934,
+   "range": 4.0,
+   "ndir": 1,
+   "price": 0.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 4,
+    "size": [
+     3,
+     3
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "",
+      "size": [
+       5,
+       5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      10.0,
       10.0,
       0.0
      ],
@@ -6063,16 +5801,336 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA603/TA603_f.png"
+     "images/towers_blender/TA502/TA502_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA603/TA603_icon_256x256.png"
+     "images/towers_blender/TA502/TA502_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA603/TA603_icon_512x512p.png"
+     "images/towers_blender/TA502/TA502_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA603/TA603_r.png"
+     "images/towers_blender/TA502/TA502_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA301-",
+   "id": "TA301",
+   "type": "aim",
+   "upgrades": [
+    "TA401"
+   ],
+   "rotate_speed": 2.5,
+   "reload_time": 0.8999999761581421,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     4,
+     4
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-03",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      500.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": false,
+     "radius": 1.0,
+     "reduction": 1.0
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA301/TA301_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA301/TA301_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA301/TA301_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA301/TA301_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA401-",
+   "id": "TA401",
+   "type": "aim",
+   "upgrades": [
+    "TA501"
+   ],
+   "rotate_speed": 2.5,
+   "reload_time": 1.100000023841858,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     4,
+     4
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-03",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      500.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 1.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA401/TA401_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA401/TA401_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA401/TA401_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA401/TA401_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA501-",
+   "id": "TA501",
+   "type": "aim",
+   "upgrades": [
+    "TA601"
+   ],
+   "rotate_speed": 2.5,
+   "reload_time": 1.2000000476837158,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     4,
+     4
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-03",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      500.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 1.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA501/TA501_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA501/TA501_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA501/TA501_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA501/TA501_r.png"
+    ]
+   }
+  },
+  {
+   "name": "TA601-",
+   "id": "TA601",
+   "type": "aim",
+   "upgrades": [
+    ""
+   ],
+   "rotate_speed": 2.5,
+   "reload_time": 1.2999999523162842,
+   "range": 2.0,
+   "ndir": 1,
+   "price": 10.0,
+   "bullet": {
+    "img": "stone",
+    "buffer": 1,
+    "size": [
+     4,
+     4
+    ],
+    "type": "normal",
+    "hiteffect": {
+     "vis": "none",
+     "type": "damage",
+     "animation": {
+      "img": "short-expl-03",
+      "size": [
+       12.5,
+       12.5
+      ],
+      "fps": 10
+     }
+    },
+    "values": {
+     "v": [
+      500.0,
+      15.0,
+      0.0
+     ],
+     "w": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "z": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "a": [
+      "",
+      "",
+      ""
+     ],
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "aoe": {
+     "on": true,
+     "radius": 2.0,
+     "reduction": 0.5
+    }
+   },
+   "images": {
+    "fix": [
+     "images/towers_blender/TA601/TA601_f.png"
+    ],
+    "icon": [
+     "images/towers_blender/TA601/TA601_icon_256x256.png"
+    ],
+    "3d": [
+     "images/towers_blender/TA601/TA601_icon_512x512p.png"
+    ],
+    "rot": [
+     "images/towers_blender/TA601/TA601_r.png"
     ]
    }
   },
@@ -6398,24 +6456,23 @@
    }
   },
   {
-   "name": "TA401-.003",
-   "id": "TA401",
+   "name": "TA402-",
+   "id": "TA402",
    "type": "aim",
    "upgrades": [
-    "TA501",
     "TA502"
    ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.10000000149011612,
-   "range": 2.0,
+   "rotate_speed": 5.0,
+   "reload_time": 0.18000000715255737,
+   "range": 3.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "stone",
     "buffer": 4,
     "size": [
-     5,
-     5
+     3,
+     3
     ],
     "type": "normal",
     "hiteffect": {
@@ -6432,7 +6489,7 @@
     },
     "values": {
      "v": [
-      15.0,
+      10.0,
       10.0,
       0.0
      ],
@@ -6465,118 +6522,37 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA401/TA401_f.png"
+     "images/towers_blender/TA402/TA402_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA401/TA401_icon_256x256.png"
+     "images/towers_blender/TA402/TA402_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA401/TA401_icon_512x512p.png"
+     "images/towers_blender/TA402/TA402_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA401/TA401_r.png"
+     "images/towers_blender/TA402/TA402_r.png"
     ]
    }
   },
   {
-   "name": "TA501-.003",
-   "id": "TA501",
-   "type": "aim",
-   "upgrades": [
-    "TA601",
-    "TA602"
-   ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.07999999821186066,
-   "range": 2.0,
-   "ndir": 1,
-   "price": 0.0,
-   "bullet": {
-    "img": "bullet-03",
-    "buffer": 4,
-    "size": [
-     5,
-     5
-    ],
-    "type": "normal",
-    "hiteffect": {
-     "vis": "none",
-     "type": "damage",
-     "animation": {
-      "img": "",
-      "size": [
-       5,
-       5
-      ],
-      "fps": 10
-     }
-    },
-    "values": {
-     "v": [
-      18.0,
-      10.0,
-      0.0
-     ],
-     "w": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "z": [
-      0.0,
-      0.0,
-      0.0
-     ],
-     "a": [
-      "",
-      "",
-      ""
-     ],
-     "s": [
-      "",
-      "",
-      ""
-     ]
-    },
-    "aoe": {
-     "on": false,
-     "radius": 0.0,
-     "reduction": 1.0
-    }
-   },
-   "images": {
-    "fix": [
-     "images/towers_blender/TA501/TA501_f.png"
-    ],
-    "icon": [
-     "images/towers_blender/TA501/TA501_icon_256x256.png"
-    ],
-    "3d": [
-     "images/towers_blender/TA501/TA501_icon_512x512p.png"
-    ],
-    "rot": [
-     "images/towers_blender/TA501/TA501_r.png"
-    ]
-   }
-  },
-  {
-   "name": "TA601-.003",
-   "id": "TA601",
+   "name": "TA602-",
+   "id": "TA602",
    "type": "aim",
    "upgrades": [
     ""
    ],
-   "rotate_speed": 2.5,
-   "reload_time": 0.07999999821186066,
-   "range": 2.0,
+   "rotate_speed": 10.0,
+   "reload_time": 0.125,
+   "range": 4.0,
    "ndir": 1,
    "price": 0.0,
    "bullet": {
-    "img": "bullet-03",
+    "img": "stone",
     "buffer": 4,
     "size": [
-     5,
-     5
+     3,
+     3
     ],
     "type": "normal",
     "hiteffect": {
@@ -6593,7 +6569,7 @@
     },
     "values": {
      "v": [
-      25.0,
+      10.0,
       10.0,
       0.0
      ],
@@ -6626,16 +6602,16 @@
    },
    "images": {
     "fix": [
-     "images/towers_blender/TA601/TA601_f.png"
+     "images/towers_blender/TA602/TA602_f.png"
     ],
     "icon": [
-     "images/towers_blender/TA601/TA601_icon_256x256.png"
+     "images/towers_blender/TA602/TA602_icon_256x256.png"
     ],
     "3d": [
-     "images/towers_blender/TA601/TA601_icon_512x512p.png"
+     "images/towers_blender/TA602/TA602_icon_512x512p.png"
     ],
     "rot": [
-     "images/towers_blender/TA601/TA601_r.png"
+     "images/towers_blender/TA602/TA602_r.png"
     ]
    }
   },

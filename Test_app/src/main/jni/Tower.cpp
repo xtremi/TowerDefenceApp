@@ -295,7 +295,7 @@ void Tower::checkMobBulletCollisions(Map* map) {
 		for (Bullet* blt = firstBullet(); blt; blt = nextBullet()) {
 			
 			if(towerDescriptor->bulletStats.effectType == bullet_hit_effect_type::debuff){
-				std::set<Mob*>* newTargets = ((MultiTargetBullet*)blt)->getNewTargets();
+				std::set<Mob*>* newTargets = dynamic_cast<MultiTargetBullet*>(blt)->getNewTargets();
 				for (Mob* m : (*newTargets)) onBulletHitMob(map, m, blt, towerDescriptor->bulletStats.aoeStats.hasAoe);
 				if(towerDescriptor->bulletStats.data.releaseDebuffOnChainEnd()){
 					std::set<Mob*>* relTargets = dynamic_cast<MultiTargetBullet*>(blt)->getReleasedTargets();
