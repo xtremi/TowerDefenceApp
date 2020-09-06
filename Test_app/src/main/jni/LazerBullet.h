@@ -12,17 +12,23 @@ public:
 	virtual void update(Map* map);
 	bool isDone();
 	void reset();
-	void updateOrientation();
+	void updateDirection(const glm::vec2& _dir = glm::vec2(1.0f, 0.0));	
 	void checkCollisions(Map* map);
 	void setTarget(Mob* m);
 	void setLazerNotFollowTarget() { lazerNotFollowingTarget = true; }
 
+
+
 private:
-	bool lazerNotFollowingTarget = false;
+	std::vector<Cell*> cellsInSight;
+	bool cellsInSightNeedUpdate		= true;
+	bool lazerNotFollowingTarget	= false;
+	
 	glm::vec2 shootLine;
 	int	  shaderID	= 0;
 	float timer		= 0.0f;
 	float timer_max	= 0.0f;
 	float range		= 0.0f;
+
 };
 

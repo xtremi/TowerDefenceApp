@@ -16,21 +16,22 @@ void LazerBullet::update(Map* map){
 	newTargets.clear();
 	releasedTargets.clear();
 	if(!lazerNotFollowingTarget)
-		updateOrientation();
+		updateDirection();
 	checkCollisions(map);
 }
 
 void LazerBullet::setTarget(Mob* m) {
 	TargetedBullet::setTarget(m);	
-	if (lazerNotFollowingTarget)
-		updateOrientation();
 }
 
 //static std::vector<Cell*> tmpcells;
 void LazerBullet::checkCollisions(Map* map) {
-	std::vector<Cell*> cellsInSight;	
-	glm::vec2 endpos = shootLine + getPos();
-	map->getRoadCellsAlongLine(getPos(), endpos, cellsInSight);
+	if(cellsInSightNeedUpdate){
+		cellsInSight.clear();
+		glm::vec2 endpos = shootLine + getPos();
+		map->getRoadCellsAlongLine(getPos(), endpos, cellsInSight);
+		if (lazerNotFollowingTarget) cellsInSightNeedUpdate = false;
+	}
 	
 	/*for (Cell* ctmp : tmpcells)
 		ctmp->setColor(colours::white);	
@@ -66,15 +67,21 @@ void LazerBullet::checkCollisions(Map* map) {
 
 }
 
+
 //TODO: check if this could be done Tower::updateBullet method?
 //because it updates the orientation of normal bullets, this should be similar maybe...
-void LazerBullet::updateOrientation() {
-	shootLine = targetMob->getPos() - getPos();
-	direction = glm::normalize(shootLine);
+void LazerBullet::updateDirection(const glm::vec2& _dir) {
+	if (!lazerNotFollowingTarget && targetMob) {
+		shootLine = targetMob->getPos() - getPos();
+		direction = glm::normalize(shootLine);
+	}
+	else
+		direction = _dir;
+
+	Bullet::updateDirection(direction);
 	shootLine = direction * range;
-	//setSize(glm::vec2(range, CHAIN_SPRITE_WIDTH));	
-	float ang = agk::ATanFull(shootLine.x, shootLine.y);
-	setRotation(ang - 90.0f);
+
+	cellsInSightNeedUpdate = true;
 }
 
 bool LazerBullet::isDone(){

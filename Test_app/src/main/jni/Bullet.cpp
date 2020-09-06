@@ -51,8 +51,8 @@ void Bullet::setDirection(const glm::vec2& _dir, float _speed) {
 void Bullet::updateDirection(const glm::vec2& _dir) {
 	direction = _dir;
 	float ang = agk::ATanFull(direction.x, direction.y);
-	if (ang < 0.0f) ang += 360.0f;
-	setRotation(ang + 90.0f);
+	//if (ang < 0.0f) ang += 360.0f;
+	setRotation(ang - 90.0f);
 }
 
 

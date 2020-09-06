@@ -16,9 +16,9 @@ public:
 	Bullet(const glm::vec4& col, const glm::vec2& pos, const glm::vec2& size);
 	Bullet(const std::string& animID, const glm::vec2& pos, const glm::vec2& size);
 
-	void setDirection(float ang, float _speed);
-	void setDirection(const glm::vec2& _dir, float _speed);
-	void updateDirection(const glm::vec2& _dir);
+	virtual void setDirection(float ang, float _speed);
+	virtual void setDirection(const glm::vec2& _dir, float _speed);
+	virtual void updateDirection(const glm::vec2& _dir);
 
 	virtual void update(Map* map) = 0;
 	virtual bool isDone() = 0;	

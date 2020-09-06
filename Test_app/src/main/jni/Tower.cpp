@@ -206,6 +206,7 @@ void Tower::shoot(Bullet* blt) {
 		break;
 	case bullet_type::lazer:
 		((LazerBullet*)blt)->setTarget(currentTarget);
+		blt->updateDirection(shootDirection);
 		break;
 	case bullet_type::path:
 		blt->setPosition(cpos + shootDirection * 10.0f);

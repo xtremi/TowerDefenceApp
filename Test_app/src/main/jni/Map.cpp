@@ -410,9 +410,9 @@ void Map::getRoadCellsAlongLine(const glm::vec2& p1, const glm::vec2& p2, std::v
 	glm::vec2	dL		 = p2 - p1;	
 	//If straight line, use other solution:
 	if (glm::abs(dL.x) < CELL_SIZE / 1000.0f)
-		getRoadCellsInStraightLine(getCellAtLocation(p1), glm::sign(dL.y) ? td::direction::south : td::direction::north, glm::length(dL), cellsInRange);
+		return getRoadCellsInStraightLine(getCellAtLocation(p1), glm::sign(dL.y) ? td::direction::south : td::direction::north, glm::length(dL) / CELL_SIZE, cellsInRange);
 	else if (glm::abs(dL.y) < CELL_SIZE / 1000.0f)
-		getRoadCellsInStraightLine(getCellAtLocation(p1), glm::sign(dL.x) ? td::direction::west : td::direction::east, glm::length(dL), cellsInRange);
+		return getRoadCellsInStraightLine(getCellAtLocation(p1), glm::sign(dL.x) ? td::direction::west : td::direction::east, glm::length(dL) / CELL_SIZE, cellsInRange);
 
 	
 	int			nsteps;
