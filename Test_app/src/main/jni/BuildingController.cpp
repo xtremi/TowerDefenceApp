@@ -115,10 +115,8 @@ void BuildingController::assignCellsInRange_circleArea(Tower* twr, Map* map, std
 }
 
 void BuildingController::assignCellsInRange_straightLine(Tower* twr, Map* map, std::vector<Cell*>& cellsInRange) {
-	float		r = twr->rangeCells();
-	glm::vec2	dir = twr->getDirection();
-	
-	int ncellsInRange = r + 1;
+	int	ncellsInRange = (int)twr->rangeCells();
+	glm::vec2	  dir = twr->getDirection();	
 	td::direction rangeDirection;
 
 	if (dir.x == 0.0f)

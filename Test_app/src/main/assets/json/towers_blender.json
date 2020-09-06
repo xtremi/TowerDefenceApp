@@ -16,8 +16,8 @@
     "img": "burn",
     "buffer": 1,
     "size": [
-     25,
-     25
+     4,
+     4
     ],
     "type": "normal",
     "hiteffect": {
@@ -35,8 +35,8 @@
     "values": {
      "v": [
       0.800000011920929,
-      0.0,
-      1.0
+      5.0,
+      0.0
      ],
      "w": [
       2.5,
@@ -482,7 +482,7 @@
    ],
    "rotate_speed": 0.0,
    "reload_time": 0.5,
-   "range": 2.0,
+   "range": 1.0,
    "ndir": 1,
    "price": 10.0,
    "bullet": {
@@ -1979,14 +1979,14 @@
    "rotate_speed": 2.5,
    "reload_time": 0.5,
    "range": 2.0,
-   "ndir": 1,
+   "ndir": 2,
    "price": 0.0,
    "bullet": {
     "img": "rocket",
     "buffer": 2,
     "size": [
-     18,
-     5
+     9,
+     2
     ],
     "type": "follow",
     "hiteffect": {
@@ -2004,7 +2004,7 @@
     "values": {
      "v": [
       100.0,
-      5.0,
+      0.5,
       0.0
      ],
      "w": [
@@ -2217,9 +2217,9 @@
     "TA604"
    ],
    "rotate_speed": 2.5,
-   "reload_time": 0.5,
+   "reload_time": 0.20000000298023224,
    "range": 2.0,
-   "ndir": 1,
+   "ndir": 4,
    "price": 0.0,
    "bullet": {
     "img": "rocket",
@@ -2243,8 +2243,8 @@
     },
     "values": {
      "v": [
-      300.0,
-      8.0,
+      100.0,
+      0.699999988079071,
       0.0
      ],
      "w": [
@@ -2305,8 +2305,8 @@
     "img": "rocket",
     "buffer": 2,
     "size": [
-     18,
-     5
+     25,
+     7
     ],
     "type": "follow",
     "hiteffect": {
@@ -2315,8 +2315,8 @@
      "animation": {
       "img": "short-expl-01",
       "size": [
-       12.5,
-       12.5
+       25.0,
+       25.0
       ],
       "fps": 9.0
      }
@@ -2324,7 +2324,7 @@
     "values": {
      "v": [
       500.0,
-      10.0,
+      1.0,
       0.0
      ],
      "w": [
@@ -5182,14 +5182,14 @@
    "rotate_speed": 2.5,
    "reload_time": 0.5,
    "range": 2.0,
-   "ndir": 1,
+   "ndir": 2,
    "price": 0.0,
    "bullet": {
     "img": "rocket",
     "buffer": 2,
     "size": [
-     18,
-     5
+     10,
+     2
     ],
     "type": "follow",
     "hiteffect": {
@@ -5207,7 +5207,7 @@
     "values": {
      "v": [
       120.0,
-      10.0,
+      0.5,
       0.0
      ],
      "w": [
@@ -5262,7 +5262,7 @@
    "rotate_speed": 2.5,
    "reload_time": 0.5,
    "range": 2.0,
-   "ndir": 1,
+   "ndir": 3,
    "price": 0.0,
    "bullet": {
     "img": "rocket",
@@ -5287,7 +5287,7 @@
     "values": {
      "v": [
       150.0,
-      8.0,
+      0.5,
       0.0
      ],
      "w": [
@@ -5544,7 +5544,7 @@
      ],
      "a": [
       "DOT",
-      "",
+      "true",
       ""
      ],
      "s": [
@@ -5624,7 +5624,7 @@
      ],
      "a": [
       "DOT",
-      "",
+      "true",
       ""
      ],
      "s": [

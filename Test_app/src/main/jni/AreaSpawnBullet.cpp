@@ -112,7 +112,7 @@ void AreaSpawnBulletTargeted_animated::update(Map* map) {
 /****************/
 void AreaSpawnBullet_targetControl::processTargets(Map* map) {
 	newTargets.clear();
-	for (Mob* m = targetCells->firstMobInRange(false); m; m = targetCells->nextMobInRange(false)) {
+	for (Mob* m = targetCells->firstMobInRange(false); m; m = targetCells->nextMobInRange(false)) {		
 		if (allTargets.find(m) == allTargets.end()) {
 			newTargets.insert(m);
 			allTargets.insert(m);

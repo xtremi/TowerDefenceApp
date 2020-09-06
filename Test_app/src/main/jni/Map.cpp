@@ -383,7 +383,7 @@ void Map::getRoadCellsInStraightLine(Cell* c, td::direction dir, float range, st
 	int			mx = c->mapLocX();
 	int			my = c->mapLocY();
 
-	int ncellsInRange = range + 1;
+	int ncellsInRange = range;
 
 	int i = mx, j = my;
 	for (int k = 0; k < ncellsInRange; k++) {
