@@ -5,6 +5,7 @@
 
 #include "GamePlay.h"
 #include "MenuUI.h"
+#include "TowerUpgradeTreeWindow.h"
 
 #define WANTED_FPS 40
 
@@ -15,7 +16,8 @@ enum class GAME_STATE
 	game_pause,
 	game_pause_level_completed,	
 	menu_ui,
-	unspecified
+	unspecified,
+	tower_upgrade_tree_window
 };
 
 #ifdef WIN_64_BUILD
@@ -39,13 +41,17 @@ public:
 	void End(void);
 	
 private:
-	GamePlay	gamePlay;
-	MenuUI		menuUI;
+	GamePlay				gamePlay;
+	MenuUI					menuUI;
+	TowerUpgradeTreeWindow  towerUpgrWindow;
 
 	GAME_STATE	state		= GAME_STATE::unspecified;
 	GAME_STATE	prevState	= GAME_STATE::unspecified;
 
 private:
+	glm::vec2 savedViewOffset;
+	float	  savedZoomOffset;
+
 	void initWindow();
 	void updateGameState();
 
@@ -55,6 +61,13 @@ private:
 	std::vector<AgkImage> loadingImages;
 	void beginLoadingScreen();
 	void endLoadingScreen();
+
+
+	void saveViewState();
+	void restoreViewState();
+
+	void getCurrentViewOffsetAndZoomLevel(glm::vec2& offset, float& zoomLvl);
+	void setViewOffsetAndZoomLevel(const glm::vec2& offset, float zoomLvl);
 
 };
 

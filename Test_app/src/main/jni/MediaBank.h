@@ -27,6 +27,8 @@ enum class ASSET {
 
 	IMG_CELL_SELECT,			// images\markers\select-cell-marker.png
 
+	IMG_TOWER_TREE,				// images/interface/in_game_menu/tower-1.png
+	IMG_TOWER_TREE_P,			// images/interface/in_game_menu/tower-2.png
     IMG_MENU,					// images/interface/in_game_menu/main-menu-1.png
     IMG_MENU_P,					// images/interface/in_game_menu/main-menu-2.png
     IMG_PAUSE,					// images/interface/in_game_menu/pause-1.png
@@ -37,6 +39,8 @@ enum class ASSET {
     IMG_FAST_P,					// images/interface/in_game_menu/fast-2.png
     IMG_DEBUG,					// images/interface/in_game_menu/debug-1.png
     IMG_DEBUG_P,				// images/interface/in_game_menu/debug-2.png
+	IMG_RETURN,					
+	IMG_RETURN_P,				
     IMG_MUSIC_ON,				// images/interface/in_game_menu/sound-on-1.png
     IMG_MUSIC_ON_P,				// images/interface/in_game_menu/sound-on-2.png
     IMG_MUSIC_OFF,				// images/interface/in_game_menu/sound-off-1.png
@@ -112,7 +116,7 @@ public:
 	Sprite* createAnimationSpriteCopy(const std::string& id, const glm::vec2& size);
 
 private:
-	int sc = 0; int sc_sync = 4; //counter for Agk::Sync()
+	int sc = 0; int sc_sync = 128; //counter for Agk::Sync()
 
 	void initAssetPathMaps();
 	void loadExternalMedia();

@@ -31,6 +31,7 @@ public:
 	bool nextWaveInvoked();
 	bool fastButtonInvoked();
 	bool debugButtonInvoked();
+	bool towerTreeButtonInvoked();
 	
 	void showPauseSign();
 	void hidePauseSign();
@@ -85,25 +86,26 @@ private:
 	std::map<std::string, glm::vec2>	GHsize;
 	std::map<std::string, double>		GHsize_d;
 
-	InfoFrame*							sideStatsFrame = NULL;	/*TODO: create a side menu frame class with these buttons*/
-	UISpriteButton_T1*					mainMenuButton = NULL; 
-	UISpriteButton_T1*					fastButton = NULL;		
-	UISpriteButton_T1*					debugButton = NULL;
-	UISpriteButton_toogle*				pauseButton = NULL;
-	UISpriteButton_toogle*				musicButton = NULL;
+	InfoFrame*							sideStatsFrame = nullptr;	/*TODO: create a side menu frame class with these buttons*/
+	UISpriteButton_T1*					mainMenuButton = nullptr;
+	UISpriteButton_T1*					fastButton = nullptr;
+	UISpriteButton_T1*					debugButton = nullptr;
+	UISpriteButton_toogle*				pauseButton = nullptr;
+	UISpriteButton_toogle*				musicButton = nullptr;
+	UISpriteButton_T1*					towerTreeButton = nullptr;
 
-	WaveHUDframe*						waveHUDframe = NULL;
-	PlayerStatsHUDframe*				playerStatsHUDframe = NULL;
+	WaveHUDframe*						waveHUDframe = nullptr;
+	PlayerStatsHUDframe*				playerStatsHUDframe = nullptr;
 
-	//NextWaveButton*						nextWaveButton = NULL;
-	InfoFrameList*						towerInfoFrame = NULL;
-	InfoFrameList*						towerUpgradeFrame = NULL;
-	//InfoFrame*							upperStatsFrame = NULL;
+	//NextWaveButton*						nextWaveButton = nullptr;
+	InfoFrameList*						towerInfoFrame = nullptr;
+	InfoFrameList*						towerUpgradeFrame = nullptr;
+	//InfoFrame*							upperStatsFrame = nullptr;
 	
-	TextSprite*							pauseSign = NULL;
-	//NumberTextSprite*					timerSprite = NULL;
-	//NumberTextSprite*					moneySprite = NULL;
-	//NumberTextSprite*					waveSprite = NULL;
+	TextSprite*							pauseSign = nullptr;
+	//NumberTextSprite*					timerSprite = nullptr;
+	//NumberTextSprite*					moneySprite = nullptr;
+	//NumberTextSprite*					waveSprite = nullptr;
 
 	void defineDimensions();
 
@@ -116,6 +118,7 @@ private:
 	void createFastButton();
 	void createDebugButton();
 	void createPauseSign();
+	void createTowerTreeButton();
 
 	void createTowerInfoFrame();
 	void createTowerUpgradeFrame();	

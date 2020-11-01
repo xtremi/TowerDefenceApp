@@ -83,15 +83,14 @@ void app::Begin(void)
 	//VIRTUAL_HEIGHT = agk::GetDeviceHeight();
 	//VIRTUAL_WIDTH = (int)((float)VIRTUAL_HEIGHT / ASPECT);
 #endif
-	
+
 	initWindow();
 	beginLoadingScreen();
-
 	MEDIA_BANK.init();	
 	menuUI.init();
 	gamePlay.init();
 	menuUI.show();
-	
+	towerUpgrWindow.init();
 	endLoadingScreen();
 
 	prevState = GAME_STATE::play;
@@ -120,6 +119,9 @@ int app::Loop (void)
 	else if (state == GAME_STATE::game_pause_level_completed) {
 		
 	}	
+	else if (state == GAME_STATE::tower_upgrade_tree_window) {
+		towerUpgrWindow.update(pPressed, pReleased, pState);
+	}
 
 	updateGameState();
 
@@ -141,13 +143,15 @@ void app::updateGameState()
 			state = GAME_STATE::menu_ui;
 		}
 		else if (gamePlay.getHud()->pauseGameInvoked()) {
-			
+				
 			if(state == GAME_STATE::play){
 				gamePlay.pause(true);
+				prevState = state;
 				state = GAME_STATE::game_pause;
 			}
 			else {
 				gamePlay.unpause();
+				prevState = state;
 				state = GAME_STATE::play;
 			}
 				
@@ -158,7 +162,14 @@ void app::updateGameState()
 		else if (gamePlay.getHud()->debugButtonInvoked()) {
 			gamePlay.toogleDebugLoggerFrame();
 		}
-
+		else if (gamePlay.getHud()->towerTreeButtonInvoked()) {
+			gamePlay.hide();
+			saveViewState();
+			setViewOffsetAndZoomLevel(glm::vec2(0.0f), 1.0f);
+			towerUpgrWindow.show();			
+			prevState = state;
+			state = GAME_STATE::tower_upgrade_tree_window;
+		}
 
 
 	}
@@ -178,6 +189,16 @@ void app::updateGameState()
 		}
 
 	}
+	else if (state == GAME_STATE::tower_upgrade_tree_window) {
+		if (towerUpgrWindow.returnInvoked()) {
+			towerUpgrWindow.hide();
+			restoreViewState();
+			gamePlay.show();
+			state = prevState;
+			if (state == GAME_STATE::play)
+				gamePlay.unpause(); //hides the pause sign (if it wasn't paused before)
+		}
+	}
 
 	if (agk::GetResumed()) {
 		
@@ -190,3 +211,27 @@ void app::End (void)
 {
     
 }
+
+
+void app::saveViewState() {
+	getCurrentViewOffsetAndZoomLevel(savedViewOffset, savedZoomOffset);
+}
+void app::restoreViewState() {
+	setViewOffsetAndZoomLevel(savedViewOffset, savedZoomOffset);
+}
+
+/*
+	Get the current view offset and zoom level from
+*/
+void app::getCurrentViewOffsetAndZoomLevel(glm::vec2& offset, float& zoomLvl)
+{
+	offset.x = agk::GetViewOffsetX();
+	offset.y = agk::GetViewOffsetY();
+	zoomLvl = agk::GetViewZoom();
+}
+
+void app::setViewOffsetAndZoomLevel(const glm::vec2& offset, float zoomLvl) {
+	agk::SetViewOffset(offset.x, offset.y);
+	agk::SetViewZoom(zoomLvl);
+}
+

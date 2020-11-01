@@ -9,6 +9,7 @@
 #define CELL_SELECT_INFO_BACK_SIZE			 200.0f
 #define CELL_SELECT_BUTTON_DIST_FROM_CENTER  100.0f
 #define CELL_SELECT_BUTTON_SIZE				 100.0f
+#define CELL_SELECT_BUTTON_ICON_SIZE		 CELL_SELECT_BUTTON_SIZE*0.7f
 #define CELL_SELECT_BUTTON_ICON_DEPTH		 2
 #define CELL_SELECT_BUTTON_BACKGROUND_DEPTH	 3
 #define CELL_SELECT_BUTTON_PRESS_SCALE		 1.2f
@@ -24,7 +25,7 @@ public:
 	CellSelectionMenuButton(AgkImage* _iconImg) 
 		: UISpriteButton(GETIMG(ASSET::IMG_CELL_MENU_BTN), glm::vec2(CELL_SELECT_BUTTON_SIZE))
 	{		
-		iconSprite = new Sprite(_iconImg, glm::vec2(0.0f), glm::vec2(CELL_SELECT_BUTTON_SIZE));
+		iconSprite = new Sprite(_iconImg, glm::vec2(0.0f), glm::vec2(CELL_SELECT_BUTTON_ICON_SIZE));
 		fixToScreen();
 		setShape(AgkSpriteShape::circle);
 		iconSprite->setShape(AgkSpriteShape::circle);

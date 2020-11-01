@@ -60,6 +60,7 @@
     <ClInclude Include="..\TowerDescriptor.h" />
     <ClInclude Include="..\TowerDirectionMenu.h" />
     <ClInclude Include="..\TowerJSONReader.h" />
+    <ClInclude Include="..\TowerUpgradeTreeWindow.h" />
     <ClInclude Include="..\Wave.h" />
     <ClInclude Include="..\WaveController.h" />
     <ClInclude Include="..\WaveDescriptor.h" />
@@ -125,6 +126,7 @@
     <ClCompile Include="..\TowerMultiDir.cpp" />
     <ClCompile Include="..\TowerDirectionMenu.cpp" />
     <ClCompile Include="..\TowerJSONReader.cpp" />
+    <ClCompile Include="..\TowerUpgradeTreeWindow.cpp" />
     <ClCompile Include="..\WaveController.cpp" />
     <ClCompile Include="..\WaveHUDframe.cpp" />
     <ClCompile Include="..\WaveJSONReader.cpp" />

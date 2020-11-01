@@ -61,15 +61,37 @@ bool TowerJSONReader::loadBulletImage(JSONObject* obj, std::string& errmsg) {
 }
 
 bool TowerJSONReader::createTowerDescriptor(JSONObject* obj, std::string& errmsg) {
+	float t0, t1;
+	float tStart;
+	t0 = agk::Timer();
+	tStart = t0;
+	std::vector<float> dts;
+
 	TowerDescriptor tdescr;
 	if (!readTowerMainData(&tdescr, obj, errmsg)) return false;
+	t1 = agk::Timer();
+	dts.push_back(t1 - t0);
+	t0 = t1;
+
 	if (!readTowerImageData(&tdescr, obj, errmsg)) return false;
-	
+	t1 = agk::Timer();
+	dts.push_back(t1 - t0);
+	t0 = t1;
+
 	JSONObject* bulletObj = nullptr;
 	if (JSONElement* e = getAndCheckJSONelement("bullet", obj, AGK_JSON_OBJECT, errmsg))
 		bulletObj = ((JSONObject*)e);
+	t1 = agk::Timer();
+	dts.push_back(t1 - t0);
+	t0 = t1;
 
 	if (!readTowerBulletData(&tdescr, bulletObj, errmsg)) return false;
+	t1 = agk::Timer();
+	dts.push_back(t1 - t0);
+	t0 = t1;
+
+	float dT = agk::Timer() - tStart;
+	for (float& dt : dts) dt *= (100.0 / dT);
 
 	(*towerDescriptors)[tdescr.ID] = tdescr;
 	return true;
@@ -237,7 +259,6 @@ bool TowerJSONReader::getTowerDescriptorImagePaths(JSONObject* obj,
 	std::vector<uString>* iconImagePaths,
 	std::string& errmsg)
 {
-
 	if (!getValue(*fixedImagePaths, "fix", obj, errmsg)) return false;
 	if (!getValue(*rotImagePaths, "rot", obj, errmsg)) return false;
 	if (!getValue(*iconImagePaths, "icon", obj, errmsg)) return false;

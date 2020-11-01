@@ -5,6 +5,7 @@
 #include "ViewController/ViewController.h"
 
 #include "GameHUD.h"
+
 #include "CellSelectionMenu.h"
 #include "TowerDirectionMenu.h"
 //#include "AnimationController.h"
@@ -61,19 +62,18 @@ public:
 	void setPointerState(bool pPressed, bool pReleased, bool pState);
 
 
-
 private:
-	window_interaction_state wis;
-	
+	window_interaction_state wis;	
 	GameHUD					hud;
-	Map						map;
-	
+	Map						map;	
+
 	MobController			mobControl;	
 	BuildingController		buildingControl;
 	WaveController			waveControl;	
 	//AnimationController		animationControl; 
 	ViewController*			viewControl			= NULL;
 	
+
 	TowerDirectionMenu*		towerDirectionMenu	= NULL;
 	CellSelectionMenu2*		cellSelectionMenu	= NULL;
 	Sprite*					cellSelectionMarker = NULL;
@@ -83,9 +83,17 @@ private:
 	OnScreenLogger*			debugLogger			= NULL;
 
 	std::vector<AgkMusic*>	bgMusics;
+	bool debugLoggerIsOn = false;
+
 
 	float					money = 0.0f;
 	int						lives = 0;
+
+	int		xcells = 28;
+	int		ycells = 60;
+	int		mobStartCell = 20;
+	int		startCellX;
+	int		startCellY;
 
 private:
 	Cell* getCellAtPointerSelection();

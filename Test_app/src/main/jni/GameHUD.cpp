@@ -2,16 +2,23 @@
 
 void GameHUD::defineDimensions() {
 
+	//Side menu:
+	float sX0 = 12.5f;
+	float sY0 = 5.0f;
+	float sdY = 60.0f;
+	glm::vec2 sBtnSize(50.0f);
+
 	GHpos = 
 	{
 		{"frame-tower-info",	glm::vec2(5.0f, 100.0f)},
 		{"frame-tower-upgrade", glm::vec2(5.f, VIRTUAL_HEIGHT - 10.0f - 175.0f)},		//out pos		
 		{"frame-side-stats",	glm::vec2(VIRTUAL_WIDTH - 75.0f, 100.0f)},		//out pos
-		{"button-menu",			glm::vec2(12.5f,   5.0f)},
-		{"button-pause",		glm::vec2(12.5f,  65.0f)},
-		{"button-music",		glm::vec2(12.5f, 125.0f)},
-		{"button-fast",			glm::vec2(12.5f, 185.0f)},
-		{"button-debug",		glm::vec2(12.5f, 245.0f)},
+		{"button-menu",			glm::vec2(sX0, sY0 + 0 * sdY)},
+		{"button-pause",		glm::vec2(sX0, sY0 + 1 * sdY)},
+		{"button-music",		glm::vec2(sX0, sY0 + 2 * sdY)},
+		{"button-fast",			glm::vec2(sX0, sY0 + 3 * sdY)},
+		{"button-debug",		glm::vec2(sX0, sY0 + 4 * sdY)},
+		{"button-tower-tree",	glm::vec2(sX0, sY0 + 5 * sdY)},
 		{"pause-sign",			glm::vec2(VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT / 2)},
 		//{"button-next-wave",	glm::vec2(VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT-75.0f)},
 		{"player-HUD-stats",	glm::vec2(75.0f, 10.0f)},
@@ -21,12 +28,14 @@ void GameHUD::defineDimensions() {
 	{
 		{"frame-tower-info",	glm::vec2(170.0f, 100.0f)},
 		{"frame-tower-upgrade", glm::vec2(VIRTUAL_WIDTH - 10.f, 175.0f)},		
-		{"frame-side-stats",	glm::vec2(75.0f, 300.0f)},
-		{"button-menu",			glm::vec2(50.0f)},
-		{"button-pause",		glm::vec2(50.0f)},
-		{"button-music",		glm::vec2(50.0f)},
-		{"button-fast",			glm::vec2(50.0f)},
-		{"button-debug",		glm::vec2(50.0f)},
+		{"frame-side-stats",	glm::vec2(75.0f, 360.0f)},
+		{"button-menu",			sBtnSize},
+		{"button-pause",		sBtnSize},
+		{"button-music",		sBtnSize},
+		{"button-fast",			sBtnSize},
+		{"button-debug",		sBtnSize},
+		{"button-debug",		sBtnSize},
+		{"button-tower-tree",	sBtnSize},
 		//{"button-next-wave",	glm::vec2(150.0f, -1.0f)},
 		{"player-HUD-stats",	glm::vec2(350.0f, 35.0f)},
 		{"wave-HUD",			glm::vec2(400.0f, 110.0f)}
@@ -62,17 +71,31 @@ void GameHUD::init()
 	createMainMenuButton();	
 	createFastButton();
 	createDebugButton();
+	createTowerTreeButton();
 	
 	createWaveHUDframe();
 	createPlayerStatsHUDframe();
 
-	realignSprites();
-	
+
+	realignSprites();	
 }
+
+void GameHUD::createTowerTreeButton() {
+	std::string id = "button-tower-tree";
+	AgkImage* img = MEDIA_BANK.getImage(ASSET::IMG_TOWER_TREE);
+	AgkImage* img_p = MEDIA_BANK.getImage(ASSET::IMG_TOWER_TREE_P);
+	towerTreeButton = new UISpriteButton_T1(img, img_p, img, GHsize[id]);
+	towerTreeButton->setAlignment(AgkHAlign::left, AgkVAlign::top);
+	towerTreeButton->setDepth(GAME_HUD_FRAME_ITEM_DEPTH);
+	towerTreeButton->fixToScreen();
+	towerTreeButton->setScreenMode();
+	frames["frame-side-stats"]->addButton(towerTreeButton, id, GHpos[id]);
+}
+
 void GameHUD::createMainMenuButton() {
 	std::string id = "button-menu";
 	AgkImage* img = MEDIA_BANK.getImage(ASSET::IMG_MENU);
-	AgkImage* img_p = MEDIA_BANK.getImage(ASSET::IMG_MENU);
+	AgkImage* img_p = MEDIA_BANK.getImage(ASSET::IMG_MENU_P);
 	mainMenuButton = new UISpriteButton_T1(img, img_p, img, GHsize[id]);
 	mainMenuButton->setAlignment(AgkHAlign::left, AgkVAlign::top);
 	mainMenuButton->setDepth(GAME_HUD_FRAME_ITEM_DEPTH);
@@ -219,6 +242,10 @@ bool GameHUD::fastButtonInvoked() {
 bool GameHUD::debugButtonInvoked() {
 	return debugButton->getButtonState();
 }
+bool GameHUD::towerTreeButtonInvoked() {
+	return towerTreeButton->getButtonState();
+}
+
 
 bool GameHUD::pauseMusicInvoked() {	
 	return musicButton->getButtonState();
@@ -242,6 +269,7 @@ void GameHUD::setMusicButtonState(bool musicButtonState) {
 
 bool GameHUD::pointerIsOverHUD() {
 
+	//can remove button from side menu here I think?
 	return (
 		towerInfoFrame->isHoovered()		||
 		towerUpgradeFrame->isHoovered()		||		

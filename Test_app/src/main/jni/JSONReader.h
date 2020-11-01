@@ -15,7 +15,7 @@ public:
 	JSONReader() {}
 
 protected:
-	int sc = 0; int sc_sync = 8; //counter for Agk::Sync()
+	int sc = 0; int sc_sync = 128; //counter for Agk::Sync()
 
 	JSONArray* checkJSONfile(char* filepath, std::string& errmsg);
 	bool checkJSONelementType(const std::string& name, JSONElement* el, int wantedJSONtype, std::string& errmsg);

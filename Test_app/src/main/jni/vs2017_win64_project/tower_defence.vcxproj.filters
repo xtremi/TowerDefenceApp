@@ -201,6 +201,9 @@
     <ClInclude Include="..\LazerBullet.h">
       <Filter>Headers\Bullets</Filter>
     </ClInclude>
+    <ClInclude Include="..\TowerUpgradeTreeWindow.h">
+      <Filter>Source</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp">
@@ -385,6 +388,9 @@
     </ClCompile>
     <ClCompile Include="..\LazerBullet.cpp">
       <Filter>Source\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TowerUpgradeTreeWindow.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

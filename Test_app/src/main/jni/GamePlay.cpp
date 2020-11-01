@@ -11,8 +11,15 @@ GamePlay::GamePlay(){}
 */
 void GamePlay::init()
 {
-	hud.init();
-	agk::SetRandomSeed(1);
+	hud.init();	
+	int	viewMode = 0;
+
+#ifdef WIN_64_BUILD
+	viewMode = 1;
+#endif 
+	float	width = xcells * CELL_SIZE;
+	float	height = ycells * CELL_SIZE;
+	viewControl = new ViewController(viewMode, 0.0f, width, 0.0f, height, ZOOM_MIN, ZOOM_MAX, VIRTUAL_WIDTH, VIRTUAL_HEIGHT);
 
 	debugLogger = new OnScreenLogger();
 	debugLogger->setPosition(DEBUG_LOGGER_POS);
@@ -37,19 +44,9 @@ void GamePlay::init()
 */
 void GamePlay::reset(int lvl)
 {
-	int		xcells		 = 28;
-	int		ycells		 = 60;
-	float	width		 = xcells * CELL_SIZE;
-	float	height		 = ycells * CELL_SIZE;
-	int		startCellX	 = xcells / 2;
-	int		startCellY	 = 4;
-	int		mobStartCell = 20;
+	startCellX = xcells / 2;
+	startCellY = 4;
 
-	int viewMode = 0;
-#ifdef WIN_64_BUILD
-	viewMode = 1;
-#endif 
-	viewControl = new ViewController(viewMode, 0.0f, width, 0.0f, height, ZOOM_MIN, ZOOM_MAX, VIRTUAL_WIDTH, VIRTUAL_HEIGHT);
 	viewControl->setCurrentViewPoint(VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT, ZOOM_MIN);
 	map.createMap(glm::vec2(0.0f), xcells, ycells, startCellX, startCellY);
 	viewControl->setCurrentViewPoint(VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT, 2.0);
@@ -58,8 +55,8 @@ void GamePlay::reset(int lvl)
 	map.setCellRowsValidState(0, map.getMobEndCell()->mapLocY(), true);
 
 	waveControl.setMobStartCell(map.getMobStartCell());
-	
-	toogleDebugLoggerFrame();
+		
+	//toogleDebugLoggerFrame();
 
 	money = START_MONEY;
 	lives = START_LIVES;
@@ -67,6 +64,8 @@ void GamePlay::reset(int lvl)
 	hud.setWaveNumber(1);
 	hud.updateWaveMobInfo(waveControl.getWaveDescriptor(0), &mobControl, false);
 }
+
+
 
 /*
 	Sent the mob wave corresponding to waveNumber
@@ -119,7 +118,6 @@ void GamePlay::update()
 		hud.setLife(lives);
 	}
 
-
 }
 
 /*
@@ -162,29 +160,31 @@ void GamePlay::processMoney()
 	Called every gameplay update and updates the values in the debug logger:
 */
 void GamePlay::processDebugLoggerData() {
-	debugLogger->setItemValue("pPressed", wis.pPressed);
-	debugLogger->setItemValue("pReleased", wis.pReleased);
-	debugLogger->setItemValue("pState", wis.pState);
-	debugLogger->setItemValue("wasPndOrZmd", wis.wasPannedOrZoomed);
-	debugLogger->setItemValue("wasTapped", wis.wasTapped);
-	debugLogger->setItemValue("pntrrOverHUD", wis.pointerOverGameHUD);
+	if (debugLoggerIsOn){
+		debugLogger->setItemValue("pPressed", wis.pPressed);
+		debugLogger->setItemValue("pReleased", wis.pReleased);
+		debugLogger->setItemValue("pState", wis.pState);
+		debugLogger->setItemValue("wasPndOrZmd", wis.wasPannedOrZoomed);
+		debugLogger->setItemValue("wasTapped", wis.wasTapped);
+		debugLogger->setItemValue("pntrrOverHUD", wis.pointerOverGameHUD);
 
-	debugLogger->setItemValue("live mobs", mobControl.liveMobs());
-	debugLogger->setItemValue("mob queue", mobControl.mobQueueSize());
-	debugLogger->setItemValue("cellmobs", map.numberOfCellsWithMobs());
+		debugLogger->setItemValue("live mobs", mobControl.liveMobs());
+		debugLogger->setItemValue("mob queue", mobControl.mobQueueSize());
+		debugLogger->setItemValue("cellmobs", map.numberOfCellsWithMobs());
 
-	debugLogger->setItemValue("sprites", agk::GetManagedSpriteCount());
-	debugLogger->setItemValue("fps", agk::ScreenFPS(), 0);
-	debugLogger->setItemValue("BC", BULLET_COUNT);
-	debugLogger->setItemValue("AMobs", mobControl.liveMobs());
-	debugLogger->setItemValue("QMobs", mobControl.mobQueueSize());
+		debugLogger->setItemValue("sprites", agk::GetManagedSpriteCount());
+		debugLogger->setItemValue("fps", agk::ScreenFPS(), 0);
+		debugLogger->setItemValue("BC", BULLET_COUNT);
+		debugLogger->setItemValue("AMobs", mobControl.liveMobs());
+		debugLogger->setItemValue("QMobs", mobControl.mobQueueSize());
 
-	int nEff, nEffM;
-	buildingControl.getNumberOfMobEffects(nEff, nEffM);
-	debugLogger->setItemValue("Neff", nEff);
-	debugLogger->setItemValue("NeffM", nEffM);
+		int nEff, nEffM;
+		buildingControl.getNumberOfMobEffects(nEff, nEffM);
+		debugLogger->setItemValue("Neff", nEff);
+		debugLogger->setItemValue("NeffM", nEffM);
 
-	debugLogger->process();
+		debugLogger->process();
+	}
 }
 
 /*
@@ -564,7 +564,8 @@ void GamePlay::show()
 {	
 	hud.show();
 	map.show();
-	debugLogger->show();
+	if(debugLoggerIsOn)
+		debugLogger->show();	
 	agk::SetVirtualJoystickVisible(JOYSTICK_ID, true);
 }
 
@@ -684,9 +685,11 @@ void GamePlay::toogleDebugLoggerFrame() {
 	if (debugLogger->isVisible()){
 		debugLogger->hide();
 		buildingControl.hideBuildingDebugInfo();
+		debugLoggerIsOn = false;
 	}
 	else{
 		debugLogger->show();
 		buildingControl.showBuildingDebugInfo();
+		debugLoggerIsOn = true;
 	}
 }
